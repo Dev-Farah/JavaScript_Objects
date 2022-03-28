@@ -1,4 +1,5 @@
 // JAVASCRIPT OBJECTS
+// Uncomment each chapter one by one to see the output 
 
 // -------------------- Chapter 1: "ALERTS" --------------------
 /*
@@ -541,5 +542,120 @@ else if (opt === "%") {
 }
 else {
   alert("Please specify an operation!")
+}
+*/
+
+
+
+
+// -------------------- Chapter 12-13: "IF…ELSE & ELSE IF STATEMENT, TESTING SET OF CONDITIONS" --------------------
+
+/*
+// Exercise 1
+var char = prompt("Enter a character");
+var result = char.charCodeAt();
+
+if (result > 47 && result < 58) {
+  alert(char + " " + "is a number");
+}
+else if (result > 64 && result < 91) {
+  alert(char + " " + "is an Uppercase letter");
+}
+else if (result > 96 && result < 123) {
+  alert(char + " " + "is a Lowercase letter");
+}
+else {
+  alert(char + " " + "is neither a number nor an alphabet");
+}
+
+// Exercise 2
+var int1 = +prompt("Enter first integer");
+var int2 = +prompt("Enter second integer");
+
+if (int1 > int2 || int1 < int2) {
+  var result = Math.max(int1, int2)
+  alert(result);
+}
+else if (int1 = int2) {
+  alert("Both are equal");
+}
+
+// Exercise 3
+var num = +prompt("Enter a number");
+
+if (num > 0) {
+  alert("The value is positive");
+}
+else if (num < 0) {
+  alert("The value is negative");
+}
+else if (num == 0) {
+  alert("It is a Zero");
+}
+else {
+  alert("It is probably not a number");
+}
+
+// Exercise 4
+var vowel = prompt("Enter a vowel");
+
+if (vowel == "a" || vowel == "e" || vowel == "i" || vowel == "o" || vowel == "u" || vowel == "A" || vowel == "E" || vowel == "I" || vowel == "O" || vowel == "U") {
+  alert(true);
+}
+else {
+  alert(false);
+}
+
+// Exercise 5
+var password = prompt("Enter a password");
+var confirmPass;
+
+if (password === "") {
+  password = prompt("Please enter a password");
+}
+else {
+  var confirmPass = prompt("Confirm your password");
+}
+
+if (password !== "" && confirmPass == undefined) {
+  confirmPass = prompt("Confirm your password");
+}
+
+if (typeof password !== "undefined" && password === confirmPass) {
+  alert("Correct! The password you entered matches the original password");
+}
+else {
+  alert("Incorrect password");
+}
+
+// Exercise 6
+var greeting;
+var hour = 13;
+if (hour < 18) {
+greeting = "Good day";
+document.write(greeting);
+}
+else {
+greeting = "Good evening";
+document.write(greeting);
+}
+
+// Exercise 7
+var time = +prompt("Enter current time in 24 hours clock format", 1900);
+
+if (time >= 0000 && time < 1200) {
+  alert("Good Morning");
+}
+else if (time >= 1200 && time < 1700) {
+  alert("Good Afternoon");
+}
+else if (time >= 1700 && time < 2100) {
+  alert("Good Evening");
+}
+else if (time >= 2100 && time < 2359) {
+  alert("Good Night");
+}
+else {
+  alert("Invalid entry! Try again")
 }
 */
