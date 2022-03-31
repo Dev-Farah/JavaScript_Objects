@@ -200,20 +200,20 @@
 
 // Exercise 4
 // var ticket = 600;
-// document.write("Total cost to buy a movie ticket is:" + " " + 5 * ticket + " " + "PKR<br /><br />");
+// document.write("Total cost to buy a movie ticket is:" + " " + 5 * ticket + " " + "PKR.<br /><br />");
 
 // Exercise 5
 // var tableOf = 2;
 // document.write("<h1>Table of " + tableOf + " " + "</h1>" + tableOf + " x 1 =" + " " + tableOf + "<br />" + tableOf + " x 2 =" + " " + tableOf * 2 + "<br />" + tableOf + " x 3 =" + " " + tableOf * 3 + "<br />" + tableOf + " x 4 =" + " " + tableOf * 4 + "<br />" + tableOf + " x 5 =" + " " + tableOf * 5 + "<br />" + tableOf + " x 6 =" + " " + tableOf * 6 + "<br />" + tableOf + " x 7 =" + " " + tableOf * 7 + "<br />" + tableOf + " x 8 =" + " " + tableOf * 8 + "<br />" + tableOf + " x 9 =" + " " + tableOf * 9 + "<br />" + tableOf + " x 10 =" + " " + tableOf * 10 + "<br /><br />");
 
 // Exercise 6
-// var c = 32; //°
-// f = (c * 9 / 5) + 32;
-// document.write(c + "°C is" + " " + f + "°F<br />");
+// var celsiusTemp = 32;
+// fahrenheitTemp = (celsiusTemp * 9 / 5) + 32;
+// document.write(celsiusTemp + "°C is" + " " + fahrenheitTemp + "°F<br />");
 
-// var f = 32;
-// c = (f - 32) * 5 / 9;
-// document.write(f + "°F is" + " " + c + "°C<br /><br />");
+// var fahrenheitTemp = 32;
+// celsiusTemp = (fahrenheitTemp - 32) * 5 / 9;
+// document.write(fahrenheitTemp + "°F is" + " " + celsiusTemp + "°C<br /><br />");
 
 // Exercise 7
 // var item1Price = 500;
@@ -222,9 +222,9 @@
 // var item2Quantity = 4;
 // var shippingCharges = 100;
 // var total = item1Price * item1Quantity + item2Price * item2Quantity + shippingCharges;
-// // var total = 500 * 5 + 700 * 4 + 100;
+// // var total = 500 * 5 + 700 * 4 + 100; //Static
 
-// document.write("<h1>Shopping Cart</h1>" + "Price of item 1 is" + " " + item1Price + "<br />" + "Quantity of item 1 is" + " " + item1Quantity + "<br />" + "Price of item 2 is" + " " + item2Price + "<br />" + "Quantity of item 2 is" + " " + item2Quantity + "<br />" + "Shipping charges" + " " + shippingCharges + "<br /><br />Total cost of your order is" + " " + total + " PKR<br /> <br />");
+// document.write("<h1>Shopping Cart</h1>" + "Price of item 1 is" + " " + item1Price + "<br />" + "Quantity of item 1 is" + " " + item1Quantity + "<br />" + "Price of item 2 is" + " " + item2Price + "<br />" + "Quantity of item 2 is" + " " + item2Quantity + "<br />" + "Shipping charges" + " " + shippingCharges + "<br /><br />Total cost of your order is" + " " + total + " PKR.<br /> <br />");
 
 // Exercise 8
 // var totalMarks = 900;
@@ -250,7 +250,7 @@
 // var currentYear = 2022;
 // var birthYear = 1996;
 // var age = currentYear - birthYear;
-// document.write("<h1>Age Calculator</h1>" + "Current Year:" + " " + currentYear + "<br />Birth Year:" + " " + birthYear + "<br />Your age is:" + " " + age + " " + "years<br /><br />");
+// document.write("<h1>Age Calculator</h1>" + "Current Year:" + " " + currentYear + "<br />Birth Year:" + " " + birthYear + "<br />Your age is:" + " " + age + " " + "years<br /><br />They are either 25 or" + " " + age + " " + "years old.<br /><br />");
 
 // Exercise 12
 // var r = 20;
@@ -261,11 +261,11 @@
 
 // Exercise 13
 // var snack = "Croissant";
-// var age = 23;
+// var age = 20;
 // var maxAge = 25;
 // var amountPerDay = 1;
-// var snacksForLife = (maxAge - age) * (amountPerDay * 365)
-// document.write("<h1>The Lifetime Supply Calculator</h1>" + "Favorite Snack:" + " " + snack + "<br />Current Age:" + " " + age + "<br />Estimated Maximum Age:" + " " + maxAge + "<br />Amount of Snacks per day:" + " " + amountPerDay + "<br />You will need" + " " + snacksForLife + " " + snack + "s " + "to last you until ripe old age of" + " " + maxAge + "<br /><br /><br />");
+// var snacksForLife = (maxAge - age) * (amountPerDay * 365);
+// document.write("<h1>The Lifetime Supply Calculator</h1>" + "Favorite Snack:" + " " + snack + "<br />Current Age:" + " " + age + "<br />Estimated Maximum Age:" + " " + maxAge + "<br />Amount of Snacks per day:" + " " + amountPerDay + "<br />You will need" + " " + snacksForLife + " " + snack + "s " + "to last you until ripe old age of" + " " + maxAge + ".<br /><br /><br />");
 
 
 
@@ -280,21 +280,39 @@
 // Exercise 2
 // var a = 2;
 // var b = 1;
+
 // var result = --a;
-// document.write("a is" + " " + a + "<br />b is" + " " + b + "<br />result is" + " " + result + "<br /><br />");
+// a = 1;
+// b = 1;
+// result = 1;
+
 // var result = --a - --b;
-// document.write("a is" + " " + a + "<br />b is" + " " + b + "<br />result is" + " " + result + "<br /><br />");
+//             // 1  -  0
+// a = 1;
+// b = 0;
+// result = 1;
+
 // var result = --a - --b + ++b;
-// document.write("a is" + " " + a + "<br />b is" + " " + b + "<br />result is" + " " + result + "<br /><br />");
-// var result = --a - --b + ++b + b--
-// document.write("a is" + " " + a + "<br />b is" + " " + b + "<br />result is" + " " + result + "<br /><br />");
+//             // 1  -  0  +  1
+// a = 1;
+// b = 1;
+// result = 2;
+
+// var result = --a - --b + ++b + b--;
+//             // 1  -  0 +   1 +  1
+// a = 1;
+// b = 1; //Now the value of b is 0
+// result = 3;
 
 // Exercise 3
 // var username = prompt("Enter your name")
-// alert("Hi" + " " + username + "!")
+// alert("Welcome," + " " + username + "!\nWe are delighted to have you.")
 
 // Exercise 5
-// var tableOf = prompt(username + ", Please enter a number to display multiplication table", "5");
+// var tableOf = prompt("Please enter a number to display multiplication table", "5");
+// if (!tableOf) {
+//     tableOf = 5
+// }
 // document.write("<h1>Table of " + tableOf + " " + "</h1>" + tableOf + " x 1 =" + " " + tableOf + "<br />" + tableOf + " x 2 =" + " " + tableOf * 2 + "<br />" + tableOf + " x 3 =" + " " + tableOf * 3 + "<br />" + tableOf + " x 4 =" + " " + tableOf * 4 + "<br />" + tableOf + " x 5 =" + " " + tableOf * 5 + "<br />" + tableOf + " x 6 =" + " " + tableOf * 6 + "<br />" + tableOf + " x 7 =" + " " + tableOf * 7 + "<br />" + tableOf + " x 8 =" + " " + tableOf * 8 + "<br />" + tableOf + " x 9 =" + " " + tableOf * 9 + "<br />" + tableOf + " x 10 =" + " " + tableOf * 10 + "<br /><br />");
 
 // Exercise 6
@@ -315,7 +333,7 @@
 // var obtainedMarks = sub1Marks + sub2Marks + sub3Marks;
 // var percent = (obtainedMarks / totalMarks) * 100;
 
-// document.write("<table><thead><tr><td>Subject</td><td>Total Marks</td><td>Obatained Marks</td><td>Percentage</td></tr></thead><tbody><tr><td>" + subject1 + "</td><td>" + totalInEach + "</td><td>" + sub1Marks + "</td><td>" + percentInSub1 + "%</td></tr><tr><td>" + subject2 + "</td><td>" + totalInEach + "</td><td>" + sub2Marks + "</td><td>" + percentInSub2 + "%</td></tr><tr><td>" + subject3 + "</td><td>" + totalInEach + "</td><td>" + sub2Marks + "</td><td>" + percentInSub2 + "%</td></tr></tbody><tfoot><tr><td></td><td>" + totalMarks + "</td><td>" + obtainedMarks + "</td><td>" + percent + " " + "%</td></tr></tfoot></table>");
+// document.write("<table><thead><tr><th>Subject</th><th>Total Marks</th><th>Obatained Marks</th><th>Percentage</th></tr></thead><tbody><tr><td>" + subject1 + "</td><td>" + totalInEach + "</td><td>" + sub1Marks + "</td><td>" + percentInSub1 + "%</td></tr><tr><td>" + subject2 + "</td><td>" + totalInEach + "</td><td>" + sub2Marks + "</td><td>" + percentInSub2 + "%</td></tr><tr><td>" + subject3 + "</td><td>" + totalInEach + "</td><td>" + sub3Marks + "</td><td>" + percentInSub3 + "%</td></tr></tbody><tfoot><tr><td></td><th>" + totalMarks + "</th><th>" + obtainedMarks + "</th><th>" + percent + "%</th></tr></tfoot></table>");
 
 
 
@@ -324,12 +342,10 @@
 // ------------------------------ Chapter 9-11: "USER INPUT & CONDITIONAL STATEMENT" ------------------------------
 
 // Exercise 1
-// var city = prompt("Enter a city name", "Karachi");
+// var city = prompt("Enter a city name");
 
-// if (city == "Karachi") {
-//   alert("Welcome to the city of lights")
-// } else {
-//   alert("Welcome to" + " " + city);
+// if (city == "Karachi" || city == "karachi") {
+//   alert("Welcome to the city of lights");
 // }
 
 // Exercise 2
@@ -340,9 +356,6 @@
 // }
 // else if (gender === "Female" || gender === "female") {
 //   alert("Good Morning, Ma'am");
-// }
-// else {
-//   alert("The value you entered is not valid");
 // }
 
 // Exercise 3
@@ -366,7 +379,7 @@
 // }
 
 // // Exercise 4
-// var fuelInCar = prompt("How many Litres of fuel is left in your car", "0.2");
+// var fuelInCar = prompt("How many Litres of fuel is left in your car");
 
 // if (fuelInCar < 0.25) {
 //   alert("Please refill the fuel in your car");
@@ -426,7 +439,7 @@
 // var totalMarks = 300;
 // var marksObtained = marksObtainedInSub1 + marksObtainedInSub2 + marksObtainedInSub3;
 
-// if (marksObtainedInSub1 < 100.1 && marksObtainedInSub2 < 100.1 && marksObtainedInSub3 < 100.1) {
+// if (marksObtainedInSub1 <= 100 && marksObtainedInSub2 <= 100 && marksObtainedInSub3 <= 100) {
 //   var percentage = (marksObtained / totalMarks) * 100;
 // }
 // else {
@@ -503,7 +516,7 @@
 // else if (temp > 10) {
 //   alert("OMG! Today's weather is so Cool.")
 // }
-// else if (temp < 10 || temp === 10) {
+// else if (temp <= 10) {
 //   alert("Oh! It is cold as ice.")
 // }
 // else {
@@ -516,7 +529,7 @@
 // var opt = prompt("Select an Operation (+, -, *, /, %)");
 
 // if (isNaN(num1) || isNaN(num2)) {
-//   alert("Invalid data!")
+//   alert("Invalid entry!");
 // }
 // else if (opt === "+") {
 //   var result = num1 + num2;
@@ -546,7 +559,7 @@
 
 
 
-// -------------------- Chapter 12-13: "IF…ELSE & ELSE IF STATEMENT, TESTING SET OF CONDITIONS" --------------------
+// -------------------- Chapter 12-13: "IF ELSE & ELSE IF STATEMENT, TESTING SET OF CONDITIONS" --------------------
 
 
 // Exercise 1
@@ -605,11 +618,11 @@
 // }
 
 // Exercise 5
-// var password = prompt("Enter a password");
+// var password = prompt("Enter your password");
 // var confirmPass;
 
 // if (password === "") {
-//   password = prompt("Please enter a password");
+//   password = prompt("Please enter your password");
 // }
 // else {
 //   var confirmPass = prompt("Confirm your password");
@@ -650,7 +663,7 @@
 // else if (time >= 1700 && time < 2100) {
 //   alert("Good Evening");
 // }
-// else if (time >= 2100 && time < 2359) {
+// else if (time >= 2100 && time <= 2359) {
 //   alert("Good Night");
 // }
 // else {
