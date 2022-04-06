@@ -5,18 +5,23 @@
 // Exercise 1
 // alert("Hi there!");
 
+
 // Exercise 2
 // alert("Error! Please enter a valid password.");
 
+
 // Exercise 3
 // alert("Welcome to JS Land...\nHappy Coding!");
+
 
 // Exercise 4
 // alert("Welcome to JS Land...");
 // alert("Happy Coding!\nPrevent this page from creating additional dialogs");
 
+
 // Exercise 5
 // console.log("Hello... I can run JS through my web browser's console");
+
 
 // Exercise 6 & 7 (Go to index.html)
 
@@ -29,8 +34,10 @@
 // Exercise 1
 // var username;
 
+
 // Exercise 2
 // var myName = "Farah Syed";
+
 
 // Exercise 3
 // a
@@ -42,6 +49,7 @@
 // c
 // alert(message);
 
+
 // Exercise 4
 // var studentName = "John Doe";
 // var age = "15 years old";
@@ -50,19 +58,24 @@
 // alert(age);
 // alert(certification);
 
+
 // Exercise 5
 // alert("PIZZA\nPIZZ\nPIZ\nPI\nP");
+
 
 // Exercise 6
 // var email = "farahsyed44@gmail.com";
 // alert("My email address is" + " " + email);
 
+
 // Exercise 7
 // var book = "A smarter way to learn JavaScript";
 // alert("I'm trying to learn from the Book" + " " + book);
 
+
 // Exercise 8
 // document.write("Yah! I can wirte HMTL content through JavaScript<br />");
+
 
 // Exercise 9
 // var sym = "▬▬▬▬▬▬▬▬▬ஜ۩۞۩ஜ▬▬▬▬▬▬▬▬▬";
@@ -79,6 +92,7 @@
 // var age = 32;
 // alert("I am" + " " + age + " " + "years old");
 
+
 // Exercise 2
 // var visitCount = localStorage.getItem("page_view");
 // if (visitCount) {
@@ -90,9 +104,11 @@
 // }
 // alert("You have visited this site" + " " + visitCount + " " + "time(s)");
 
+
 // Exercise 3
 // var birthYear = 1990;
 // document.write("My birth year is" + " " + birthYear + "<br />Data type of my declared variable is number<br />");
+
 
 // Exercise 4
 // var visitorName = prompt("Enter your full name", "John Doe");
@@ -112,6 +128,7 @@
 // var step1 = "HTML",
 //   step2 = "CSS",
 //   step3 = "JavaScript";
+
 
 // Exercise 2
 // // 5 Legal variable names:
@@ -151,6 +168,7 @@
 //   document.write("Sum of" + " " + num1 + " " + "and" + " " + num2 + " " + "is" + " " + result + "<br /><br />");
 // }
 
+
 // Exercise 2
 // var num1 = +prompt("Enter first number");
 // var opt = prompt("Specify an operator");
@@ -179,6 +197,7 @@
 //   document.write("Mathematical operation cannot be performed!<br /><br />");
 // }
 
+
 // Exercise 3
 // var num;
 // document.write("Value after variable declaration is:" + " " + num + "<br />");
@@ -198,13 +217,16 @@
 // var result = num % 3;
 // document.write("The remainder is:" + " " + result + "<br /><br />");
 
+
 // Exercise 4
 // var ticket = 600;
 // document.write("Total cost to buy a movie ticket is:" + " " + 5 * ticket + " " + "PKR.<br /><br />");
 
+
 // Exercise 5
 // var tableOf = 2;
 // document.write("<h1>Table of " + tableOf + " " + "</h1>" + tableOf + " x 1 =" + " " + tableOf + "<br />" + tableOf + " x 2 =" + " " + tableOf * 2 + "<br />" + tableOf + " x 3 =" + " " + tableOf * 3 + "<br />" + tableOf + " x 4 =" + " " + tableOf * 4 + "<br />" + tableOf + " x 5 =" + " " + tableOf * 5 + "<br />" + tableOf + " x 6 =" + " " + tableOf * 6 + "<br />" + tableOf + " x 7 =" + " " + tableOf * 7 + "<br />" + tableOf + " x 8 =" + " " + tableOf * 8 + "<br />" + tableOf + " x 9 =" + " " + tableOf * 9 + "<br />" + tableOf + " x 10 =" + " " + tableOf * 10 + "<br /><br />");
+
 
 // Exercise 6
 // var celsiusTemp = 32;
@@ -214,6 +236,7 @@
 // var fahrenheitTemp = 32;
 // celsiusTemp = (fahrenheitTemp - 32) * 5 / 9;
 // document.write(fahrenheitTemp + "°F is" + " " + celsiusTemp + "°C<br /><br />");
+
 
 // Exercise 7
 // var item1Price = 500;
@@ -226,11 +249,13 @@
 
 // document.write("<h1>Shopping Cart</h1>" + "Price of item 1 is" + " " + item1Price + "<br />" + "Quantity of item 1 is" + " " + item1Quantity + "<br />" + "Price of item 2 is" + " " + item2Price + "<br />" + "Quantity of item 2 is" + " " + item2Quantity + "<br />" + "Shipping charges" + " " + shippingCharges + "<br /><br />Total cost of your order is" + " " + total + " PKR.<br /> <br />");
 
+
 // Exercise 8
 // var totalMarks = 900;
 // var marksObtained = 850;
 // var percent = (marksObtained / totalMarks) * 100
 // document.write("<h1>Mark Sheet</h1>" + "Total Marks:" + " " + totalMarks + "<br />Marks Obtained:" + " " + marksObtained + "<br />Percentage:" + " " + percent + "%<br /><br />");
+
 
 // Exercise 9
 // // 1 U.S. Dollar(USD) into PKR
@@ -242,9 +267,11 @@
 // var total = usd * 10 + sar * 25;
 // document.write("<h1>Currency in PKR</h1>" + "Total Currency in PKR:" + " " + total + "<br /><br />");
 
+
 // Exercise 10
 // var num = 10;
 // document.write(((5 + num) * 10) / 2 + "<br /><br />");
+
 
 // Exercise 11
 // var currentYear = 2022;
@@ -252,12 +279,14 @@
 // var age = currentYear - birthYear;
 // document.write("<h1>Age Calculator</h1>" + "Current Year:" + " " + currentYear + "<br />Birth Year:" + " " + birthYear + "<br />Your age is:" + " " + age + " " + "years<br /><br />They are either 25 or" + " " + age + " " + "years old.<br /><br />");
 
+
 // Exercise 12
 // var r = 20;
 // var π = 3.142;
 // var C = 2 * π * r;
 // var A = π * Math.pow(r, 2);
 // document.write("<h1>The Geometrizer</h1>" + "Radius of a circle:" + " " + r + "<br />The circumference is:" + " " + C + "<br />The area is:" + " " + A + "<br /><br />");
+
 
 // Exercise 13
 // var snack = "Croissant";
@@ -276,6 +305,7 @@
 // Exercise 1
 // var a = 10;
 // document.write("Result:<br />The value of a is" + " " + a + "<br /><br /> The value of ++a is:" + " " + ++a + "<br />Now the value of a is:" + " " + a + "<br /><br />The value of a++ is:" + " " + a++ + "<br />Now the value of a is:" + " " + a + "<br/ ><br />The value of --a is:" + " " + --a + "<br />Now the value of a is:" + " " + a + "<br /><br />The value of a-- is:" + " " + a-- + "<br />Now the value of a is:" + " " + a + "<br /><br />");
+
 
 // Exercise 2
 // var a = 2;
@@ -304,9 +334,11 @@
 // b = 1; //Now the value of b is 0
 // result = 3;
 
+
 // Exercise 3
 // var username = prompt("Enter your name")
 // alert("Welcome," + " " + username + "!\nWe are delighted to have you.")
+
 
 // Exercise 5
 // var tableOf = prompt("Please enter a number to display multiplication table", "5");
@@ -314,6 +346,7 @@
 //     tableOf = 5
 // }
 // document.write("<h1>Table of " + tableOf + " " + "</h1>" + tableOf + " x 1 =" + " " + tableOf + "<br />" + tableOf + " x 2 =" + " " + tableOf * 2 + "<br />" + tableOf + " x 3 =" + " " + tableOf * 3 + "<br />" + tableOf + " x 4 =" + " " + tableOf * 4 + "<br />" + tableOf + " x 5 =" + " " + tableOf * 5 + "<br />" + tableOf + " x 6 =" + " " + tableOf * 6 + "<br />" + tableOf + " x 7 =" + " " + tableOf * 7 + "<br />" + tableOf + " x 8 =" + " " + tableOf * 8 + "<br />" + tableOf + " x 9 =" + " " + tableOf * 9 + "<br />" + tableOf + " x 10 =" + " " + tableOf * 10 + "<br /><br />");
+
 
 // Exercise 6
 // var subject1 = prompt("Enter a subject name");
@@ -348,6 +381,7 @@
 //   alert("Welcome to the city of lights");
 // }
 
+
 // Exercise 2
 // var gender = prompt("Gender");
 
@@ -358,25 +392,27 @@
 //   alert("Good Morning, Ma'am");
 // }
 
+
 // Exercise 3
 // var red = "Must Stop";
 // var yellow = "Ready to Move";
 // var green = "Move now";
 
-// var SignalColor = prompt("Enter a color of road traffic signal");
+// var signalColor = prompt("Enter a color of road traffic signal");
 
-// if (SignalColor === "Red" || SignalColor === "red") {
+// if (signalColor === "Red" || signalColor === "red") {
 //   alert(red);
 // }
-// else if (SignalColor === "Yellow" || SignalColor === "yellow") {
+// else if (signalColor === "Yellow" || signalColor === "yellow") {
 //   alert(yellow);
 // }
-// else if (SignalColor === "Green" || SignalColor === "green") {
+// else if (signalColor === "Green" || signalColor === "green") {
 //   alert(green);
 // }
 // else {
 //   alert("Invalid Entry! Please Try again");
 // }
+
 
 // // Exercise 4
 // var fuelInCar = prompt("How many Litres of fuel is left in your car");
@@ -387,6 +423,7 @@
 // else {
 //   alert("No need to refill the fuel now");
 // }
+
 
 // Exercise 5
 // var a = 4;
@@ -431,6 +468,7 @@
 //   alert("car is smaller than cat"); //Displayed
 // }
 
+
 // Exercise 6
 // var marksObtainedInSub1 = +prompt("Marks Obtained in Subject 1 out of 100");
 // var marksObtainedInSub2 = +prompt("Marks Obtained in Subject 2 out of 100");
@@ -464,6 +502,7 @@
 // }
 // document.write("<h1>Mark Sheet</h1> Total Marks:" + " " + totalMarks + "<br />Marks Obtained:" + " " + marksObtained + "<br />Percentage:" + " " + percentage + "%<br />Grade:" + " " + grade + "<br />Remarks:" + " " + remarks + "<br /><br />");
 
+
 // Exercise 7
 // var secretNum = 5;
 // var userNum = +prompt("Guess the secret number");
@@ -478,6 +517,7 @@
 //   alert("Better luck next time");
 // }
 
+
 // Exercise 8
 // var num = +prompt("Enter a number to check if it is divisible by 3");
 
@@ -487,6 +527,7 @@
 // else {
 //   alert("No," + " " + num + " " + "is not divisible by 3");
 // }
+
 
 // Exercise 9
 // var n = +prompt("Enter a number to check if it is even or odd");
@@ -500,6 +541,7 @@
 // else {
 //   alert("Please enter a number")
 // }
+
 
 // Exercise 10
 // var temp = +prompt("Enter the current temperature of your city");
@@ -522,6 +564,7 @@
 // else {
 //   alert("Please enter a number");
 // }
+
 
 // Exercise 11
 // var num1 = +prompt("First number");
@@ -561,7 +604,6 @@
 
 // -------------------- Chapter 12-13: "IF ELSE & ELSE IF STATEMENT, TESTING SET OF CONDITIONS" --------------------
 
-
 // Exercise 1
 // var char = prompt("Enter a character");
 // var result = char.charCodeAt();
@@ -579,6 +621,7 @@
 //   alert(char + " " + "is neither a number nor an alphabet");
 // }
 
+
 // Exercise 2
 // var int1 = +prompt("Enter first integer");
 // var int2 = +prompt("Enter second integer");
@@ -590,6 +633,7 @@
 // else if (int1 = int2) {
 //   alert("Both are equal");
 // }
+
 
 // Exercise 3
 // var num = +prompt("Enter a number");
@@ -607,6 +651,7 @@
 //   alert("It is probably not a number");
 // }
 
+
 // Exercise 4
 // var vowel = prompt("Enter a vowel");
 
@@ -616,6 +661,7 @@
 // else {
 //   alert(false);
 // }
+
 
 // Exercise 5
 // var password = prompt("Enter your password");
@@ -639,6 +685,7 @@
 //   alert("Incorrect password");
 // }
 
+
 // Exercise 6
 // var greeting;
 // var hour = 13;
@@ -650,6 +697,7 @@
 // greeting = "Good evening";
 // document.write(greeting);
 // }
+
 
 // Exercise 7
 // var time = +prompt("Enter current time in 24 hours clock format", 1900);
@@ -669,3 +717,312 @@
 // else {
 //   alert("Invalid entry! Try again")
 // }
+
+
+
+
+
+/* ------------------------------ "Arrays and Loop" ------------------------------ */
+
+// Exercise 1
+// var emptyArr = [
+//     [], 
+//     [], 
+//     [], 
+//     []
+// ];
+
+
+// Exercise 2
+// var matrixArr = [
+//     [0, 1, 2, 3],
+//     [1, 0, 1, 2],
+//     [2, 1, 0, 1],
+// ];
+
+
+// Exercise 3
+// for (var i = 1; i <= 10; i++) {
+//     document.write(i + "<br />");
+// }
+
+
+// Exercise 4
+// var tableNum = +prompt("Enter a number to display its Multiplication Table");
+// var tableLength = +prompt("Enter a length for your table");
+
+// if (!tableNum || tableNum == (isNaN) || !tableLength || tableLength == (isNaN)) {
+//     document.write("Invalid Entry!")
+// } else {
+// for (var i = 1; i <= tableLength; i++) {
+//     document.write(tableNum + " x " + i + " = " + tableNum * i + "<br />");
+// }
+// }
+
+
+// Exercise 5
+// var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+
+// for (var i = 0; i <= 4; i++) {
+//     document.write(fruits[i] + "<br />");
+// }
+// document.write("<br />");
+
+// for (var i = 0; i <= 4; i++) {
+//     document.write("Element at index " + i + " is " + fruits[i] + "<br />");  
+// }
+
+
+// Exercise 6
+// document.write("<h2>Counting:</h2>");
+// for (var i = 1; i <= 15; i++) {
+//     document.write(i + ", ");
+// }
+
+// document.write("<h2>Reverse Counting:</h2>");
+// for (var i = 10; i >= 1; i--) {
+//     document.write(i + ", ");
+// }
+
+// document.write("<h2>Even Numbers:</h2>");
+// for (var i = 0; i <= 20; i++) {
+//     if (i%2 == 0) {
+//         document.write(i + ", ");
+//     }
+// }
+
+// document.write("<h2>Odd Numbers:</h2>");
+// for (var i = 1; i <= 20; i++) {
+//     if (i%2 !== 0) {
+//         document.write(i + ", ");
+//     }
+// }
+
+// document.write("<h2>Series:</h2>");
+// for (var i = 1; i <= 20; i++) {
+//     if (i%2 == 0) {
+//         document.write(i + "k, ");
+//     }
+// }
+
+
+// Exercise 7
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var isAvailable = false;
+
+// var userSearch = prompt("Welcome to ABC Bakery, What so you want to order?");
+// for (var i = 0; i <= A.length; i++) {
+//     if (userSearch === A[i]) {
+//         isAvailable = true;
+//         alert(A[i] + " is available at index " + [i] + " in our bakery");
+//         break
+//     }
+// }
+// if (!isAvailable) {
+//     alert("We are Sorry! " + userSearch + " is not available in our bakery");
+// }
+
+
+// Exercise 8
+// var A = [24, 53, 78, 91, 12];
+
+// document.write("Array items:" + " ");
+// for (var i = 0; i < A.length; i++) {
+//     document.write(A[i] + ", ");
+// }
+// document.write("<br />The largest number is" + " " + Math.max(...A) + "<br /><br />");
+
+
+// Exercise 9
+// var A = [24, 53, 78, 91, 12];
+
+// document.write("Array items:" + " ");
+// for (var i = 0; i < A.length; i++) {
+//     document.write(A[i] + ", ");
+// }
+// document.write("<br />The smallest number is" + " " + Math.min(...A) + "<br /><br />");
+
+
+// Exercise 10
+// document.write("<h2>Multiples of 5</h2>");
+// for (var i = 1; i <= 100; i++) {
+//     if (i%5 == 0) {
+//         document.write(i + ", ");
+//     }
+// }
+
+
+
+
+
+/* ------------------------------ "Arrays" ------------------------------ */
+
+//  Exercise 1
+// var stdNames = [];
+
+
+// Exercise 2
+// var stdNames = new Array();
+
+
+// Exercise 3
+// var cities = new Array("London", "Tokyo", "Amsterdam", "Madrid");
+// // OR
+// var cities = ["London", "Tokyo", "Amsterdam", "Madrid"];
+
+
+// Exercise 4
+// var numbers = new Array(1, 2, 3, 4);
+// // OR
+// var numbers = [1, 2, 3, 4];
+
+
+// Exercise 5
+// var boolean = new Array(true, false);
+// // OR
+// var boolean = [true, false]
+
+
+// Exercise 6
+// var mixed = new Array(4);
+// mixed[0] = "Karachi";
+// mixed[1] = 1;
+// mixed[3] = true;
+// // OR
+// var mixed = ["Karachi", 1, , true];
+
+
+// Exercise 7
+// document.write("<h2>Qualifications:</h2>")
+
+// var qualifications = ["SSC", "HSC", "BCS", "BS", "BCOM", "MS", "M. Phil.", "PhD"];
+
+// for (var i = 0; i < qualifications.length; i++) {
+//     document.write(i+1 + ") " + qualifications[i] + "<br />")
+// }
+
+
+// Exercise 8
+// var stdNames = ["Michael", "John", "Tony"];
+
+// var scores = [320, 230, 480];
+
+// var totalMarks = 500;
+
+// for (var i = 0; i < scores.length; i++) {
+// document.write("Score of " + stdNames[i] + " is " + scores[i] + ". Percentage: " + (scores[i] / totalMarks) * 100 + "%<br />");
+// }
+
+
+// Exercise 9
+// var colors = ["red", "green", "blue"];
+// console.log(colors);
+
+// // a.
+// var addToStart = prompt("Enter a color name you want to add to the beginning");
+// colors.unshift(addToStart);
+// console.log(colors);
+
+// // b.
+// var addToEnd = prompt("Enter a color name you want to add to the end");
+// colors.push(addToEnd);
+// console.log(colors);
+
+// // c.
+// var addValue1 = prompt("Enter first color");
+// var addValue2 = prompt("Enter second color");
+// colors.unshift(addValue1, addValue2)
+// console.log(colors);
+
+// // d.
+// colors.shift();
+// console.log(colors);
+
+// // e.
+// colors.pop();
+// console.log(colors);
+
+// // f.
+// var addIndex = prompt("At which index do you want to add a color?");
+// var addColor = prompt("Which color do you want to add?");
+// colors.splice(addIndex, 0, addColor);
+// console.log(colors);
+
+// // g.
+// var deleteIndex = prompt("At which index do you want to delete the color/s?");
+// var deleteNum = prompt("How many colors do you want to delete?");
+// colors.splice(deleteIndex, deleteNum);
+// console.log(colors);
+
+
+// Exercise 10
+// var stdScores = [320, 230, 480, 120];
+// document.write("<h2>Scores of Students</h2>" + stdScores);
+
+// stdScores.sort();
+// document.write("<h2>Ordered Scores of Students</h2>" + stdScores);
+// // OR
+// function bubbleSort(stdScores) {
+//     for (var i = 0; i < stdScores.length - 1; i++) {
+//         for (var j = 0; j < stdScores.length - 1 - i; j++) {
+//             if (stdScores[j] > stdScores[j + 1]) {
+//                 [stdScores[j], stdScores[j + 1]] = [stdScores[j + 1], stdScores[j]];
+//             }
+//         }
+//     }
+//     return stdScores;
+// }
+// // console.log(bubbleSort(stdScores));
+// document.write("<h2>Ordered Scores of Students</h2>" + bubbleSort(stdScores));
+
+
+// Exercise 11
+// var cities = ["Karachi", " Lahore", " Islamabad", " Quetta", " Peshawar"];
+// document.write("<h2>Cities List:</h2>" + cities);
+
+// var selectedCities = cities.slice(2, 5);
+// document.write("<h2>Selected Cities List:</h2>" + selectedCities + "<br />");
+
+
+// Exercise 12
+// var arr = ["This", " is", " my", " cat"];
+
+// document.write("<h2>Array:</h2>" + arr);
+
+// document.write("<h2>String:</h2>");
+// for (var i = 0; i < arr.length; i++) {
+//     document.write(arr[i]);
+// }
+// OR
+// var text = arr.join(" ");
+// document.write(text);
+
+
+// Exercise 13     // FIFO-First In First Out
+// var devices = ["keyboard", " mouse", " printer", " monitor"];
+// document.write("<h3>Devices:</h3>" + devices + "<br /><br />")
+
+// for (var i = 0; i = devices.length; i++) {
+//     var firstElement = devices.shift();
+//     document.write("Out:<br />" + firstElement + "<br />");
+// }
+
+
+// Exercise 14     // LIFO- Last In Last Out
+// var devices = [" keyboard", " mouse", " printer", " monitor"];
+// document.write("<h3>Devices:</h3>" + devices + "<br /><br />")
+
+// for (var i = 0; i = devices.length; i++) {
+//     var lastElement = devices.pop();
+//     document.write("Out:<br />" + lastElement + "<br />");
+// }
+
+
+// Exercise 15
+// var mobCompanies = ["Apple", "Samsung", "Motorola", "Nokia", "Sony", "Haier"];
+
+// document.write("<label for='companies'>Phone Manufacturers:<select name='manufacturers' id='companies'><option value='#' selected disabled>Select an option</option>");
+// for (var i = 0; i < mobCompanies.length; i++) {
+//     document.write("<option value='" + mobCompanies[i] + "'>" + mobCompanies[i] + "</option>");
+// }
+// document.write("</select></label>");
