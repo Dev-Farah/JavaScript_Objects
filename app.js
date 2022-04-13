@@ -300,7 +300,7 @@
 
 
 
-// ------------------------------ Chapter 6-9: "MATH EXPRESSIONS" ------------------------------
+// ------------------------------ Chapters 6-9: "MATH EXPRESSIONS" ------------------------------
 
 // Exercise 1
 // var a = 10;
@@ -372,7 +372,7 @@
 
 
 
-// ------------------------------ Chapter 9-11: "USER INPUT & CONDITIONAL STATEMENT" ------------------------------
+// ------------------------------ Chapters 9-11: "USER INPUT & CONDITIONAL STATEMENT" ------------------------------
 
 // Exercise 1
 // var city = prompt("Enter a city name");
@@ -602,19 +602,19 @@
 
 
 
-// -------------------- Chapter 12-13: "IF ELSE & ELSE IF STATEMENT, TESTING SET OF CONDITIONS" --------------------
+// -------------------- Chapters 12-13: "IF ELSE & ELSE IF STATEMENT, TESTING SET OF CONDITIONS" --------------------
 
 // Exercise 1
 // var char = prompt("Enter a character");
 // var result = char.charCodeAt();
 
-// if (result > 47 && result < 58) {
+// if (result >= 48 && result <= 57) {
 //   alert(char + " " + "is a number");
 // }
-// else if (result > 64 && result < 91) {
+// else if (result >= 65 && result <= 90) {
 //   alert(char + " " + "is an Uppercase letter");
 // }
-// else if (result > 96 && result < 123) {
+// else if (result >= 97 && result <= 122) {
 //   alert(char + " " + "is a Lowercase letter");
 // }
 // else {
@@ -722,140 +722,7 @@
 
 
 
-/* ------------------------------ "Arrays and Loop" ------------------------------ */
-
-// Exercise 1
-// var emptyArr = [
-//     [], 
-//     [], 
-//     [], 
-//     []
-// ];
-
-
-// Exercise 2
-// var matrixArr = [
-//     [0, 1, 2, 3],
-//     [1, 0, 1, 2],
-//     [2, 1, 0, 1],
-// ];
-
-
-// Exercise 3
-// for (var i = 1; i <= 10; i++) {
-//     document.write(i + "<br />");
-// }
-
-
-// Exercise 4
-// var tableNum = +prompt("Enter a number to display its Multiplication Table");
-// var tableLength = +prompt("Enter a length for your table");
-
-// if (!tableNum || tableNum == (isNaN) || !tableLength || tableLength == (isNaN)) {
-//     document.write("Invalid Entry!")
-// } else {
-// for (var i = 1; i <= tableLength; i++) {
-//     document.write(tableNum + " x " + i + " = " + tableNum * i + "<br />");
-// }
-// }
-
-
-// Exercise 5
-// var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
-
-// for (var i = 0; i <= 4; i++) {
-//     document.write(fruits[i] + "<br />");
-// }
-// document.write("<br />");
-
-// for (var i = 0; i <= 4; i++) {
-//     document.write("Element at index " + i + " is " + fruits[i] + "<br />");  
-// }
-
-
-// Exercise 6
-// document.write("<h2>Counting:</h2>");
-// for (var i = 1; i <= 15; i++) {
-//     document.write(i + ", ");
-// }
-
-// document.write("<h2>Reverse Counting:</h2>");
-// for (var i = 10; i >= 1; i--) {
-//     document.write(i + ", ");
-// }
-
-// document.write("<h2>Even Numbers:</h2>");
-// for (var i = 0; i <= 20; i++) {
-//     if (i%2 == 0) {
-//         document.write(i + ", ");
-//     }
-// }
-
-// document.write("<h2>Odd Numbers:</h2>");
-// for (var i = 1; i <= 20; i++) {
-//     if (i%2 !== 0) {
-//         document.write(i + ", ");
-//     }
-// }
-
-// document.write("<h2>Series:</h2>");
-// for (var i = 1; i <= 20; i++) {
-//     if (i%2 == 0) {
-//         document.write(i + "k, ");
-//     }
-// }
-
-
-// Exercise 7
-// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
-// var isAvailable = false;
-
-// var userSearch = prompt("Welcome to ABC Bakery, What so you want to order?");
-// for (var i = 0; i <= A.length; i++) {
-//     if (userSearch === A[i]) {
-//         isAvailable = true;
-//         alert(A[i] + " is available at index " + [i] + " in our bakery");
-//         break
-//     }
-// }
-// if (!isAvailable) {
-//     alert("We are Sorry! " + userSearch + " is not available in our bakery");
-// }
-
-
-// Exercise 8
-// var A = [24, 53, 78, 91, 12];
-
-// document.write("Array items:" + " ");
-// for (var i = 0; i < A.length; i++) {
-//     document.write(A[i] + ", ");
-// }
-// document.write("<br />The largest number is" + " " + Math.max(...A) + "<br /><br />");
-
-
-// Exercise 9
-// var A = [24, 53, 78, 91, 12];
-
-// document.write("Array items:" + " ");
-// for (var i = 0; i < A.length; i++) {
-//     document.write(A[i] + ", ");
-// }
-// document.write("<br />The smallest number is" + " " + Math.min(...A) + "<br /><br />");
-
-
-// Exercise 10
-// document.write("<h2>Multiples of 5</h2>");
-// for (var i = 1; i <= 100; i++) {
-//     if (i%5 == 0) {
-//         document.write(i + ", ");
-//     }
-// }
-
-
-
-
-
-/* ------------------------------ "Arrays" ------------------------------ */
+// ------------------------------ Chapters 13-16: "ARRAYS" ------------------------------
 
 //  Exercise 1
 // var stdNames = [];
@@ -998,7 +865,7 @@
 // document.write(text);
 
 
-// Exercise 13     // FIFO-First In First Out
+// Exercise 13     // FIFO - First In First Out
 // var devices = ["keyboard", " mouse", " printer", " monitor"];
 // document.write("<h3>Devices:</h3>" + devices + "<br /><br />")
 
@@ -1008,7 +875,7 @@
 // }
 
 
-// Exercise 14     // LIFO- Last In Last Out
+// Exercise 14     // LIFO - Last In Last Out
 // var devices = [" keyboard", " mouse", " printer", " monitor"];
 // document.write("<h3>Devices:</h3>" + devices + "<br /><br />")
 
@@ -1026,3 +893,315 @@
 //     document.write("<option value='" + mobCompanies[i] + "'>" + mobCompanies[i] + "</option>");
 // }
 // document.write("</select></label>");
+
+
+
+
+
+// ------------------------------ Chapters 17-20: "ARRAYS AND LOOP" ------------------------------
+
+// Exercise 1
+// var emptyArr = [
+//     [], 
+//     [], 
+//     [], 
+//     []
+// ];
+
+
+// Exercise 2
+// var matrixArr = [
+//     [0, 1, 2, 3],
+//     [1, 0, 1, 2],
+//     [2, 1, 0, 1],
+// ];
+
+
+// Exercise 3
+// for (var i = 1; i <= 10; i++) {
+//     document.write(i + "<br />");
+// }
+
+
+// Exercise 4
+// var tableNum = +prompt("Enter a number to display its Multiplication Table");
+// var tableLength = +prompt("Enter a length for your table");
+
+// if (!tableNum || tableNum == (isNaN) || !tableLength || tableLength == (isNaN)) {
+//     document.write("Invalid Entry!")
+// } else {
+// for (var i = 1; i <= tableLength; i++) {
+//     document.write(tableNum + " x " + i + " = " + tableNum * i + "<br />");
+// }
+// }
+
+
+// Exercise 5
+// var fruits = ["apple", "banana", "mango", "orange", "strawberry"];
+
+// for (var i = 0; i <= 4; i++) {
+//     document.write(fruits[i] + "<br />");
+// }
+// document.write("<br />");
+
+// for (var i = 0; i <= 4; i++) {
+//     document.write("Element at index " + i + " is " + fruits[i] + "<br />");  
+// }
+
+
+// Exercise 6
+// document.write("<h2>Counting:</h2>");
+// for (var i = 1; i <= 15; i++) {
+//     document.write(i + ", ");
+// }
+
+// document.write("<h2>Reverse Counting:</h2>");
+// for (var i = 10; i >= 1; i--) {
+//     document.write(i + ", ");
+// }
+
+// document.write("<h2>Even Numbers:</h2>");
+// for (var i = 0; i <= 20; i++) {
+//     if (i%2 == 0) {
+//         document.write(i + ", ");
+//     }
+// }
+
+// document.write("<h2>Odd Numbers:</h2>");
+// for (var i = 1; i <= 20; i++) {
+//     if (i%2 !== 0) {
+//         document.write(i + ", ");
+//     }
+// }
+
+// document.write("<h2>Series:</h2>");
+// for (var i = 1; i <= 20; i++) {
+//     if (i%2 == 0) {
+//         document.write(i + "k, ");
+//     }
+// }
+
+
+// Exercise 7
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var isAvailable = false;
+
+// var userSearch = prompt("Welcome to ABC Bakery, What do you want to order?");
+// for (var i = 0; i <= A.length; i++) {
+//     if (userSearch === A[i]) {
+//         isAvailable = true;
+//         alert(A[i] + " is available at index " + [i] + " in our bakery");
+//         break
+//     }
+// }
+// if (!isAvailable) {
+//     alert("We are Sorry! " + userSearch + " is not available in our bakery");
+// }
+
+
+// Exercise 8
+// var A = [24, 53, 78, 91, 12];
+
+// document.write("Array items:" + " ");
+// for (var i = 0; i < A.length; i++) {
+//     document.write(A[i] + ", ");
+// }
+// document.write("<br />The largest number is" + " " + Math.max(...A) + "<br /><br />");
+
+
+// Exercise 9
+// var A = [24, 53, 78, 91, 12];
+
+// document.write("Array items:" + " ");
+// for (var i = 0; i < A.length; i++) {
+//     document.write(A[i] + ", ");
+// }
+// document.write("<br />The smallest number is" + " " + Math.min(...A) + "<br /><br />");
+
+
+// Exercise 10
+// document.write("<h2>Multiples of 5</h2>");
+// for (var i = 1; i <= 100; i++) {
+//     if (i%5 == 0) {
+//         document.write(i + ", ");
+//     }
+// }
+
+
+
+
+
+// ------------------------------ Chapters 20-21: "STRING METHODS" ------------------------------
+
+// Exercise 1
+// var firstName = prompt("Enter First name");
+// var lastName = prompt("Enter Last name");
+// var capFirst = firstName[0].toUpperCase() + firstName.slice(1).toLowerCase();
+// var capLast = lastName[0].toUpperCase() + lastName.slice(1).toLowerCase();
+// var fullName = alert("Welcome," + " " + capFirst + " " + capLast);
+
+
+// Exercise 2
+// var favModel = prompt("Enter your favorite mobile phone model");
+// var length = favModel.length;
+// var arr = favModel.split(" ");
+
+// for (var i = 0; i < arr.length; i++) {
+//     arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1).toLowerCase();
+// }
+// var titleCase = arr.join(" ");
+// document.write("My favorite phone is:" + " " + titleCase + "<br />Length of string:" + length);
+
+
+// Exercise 3
+// var nationality = "Pakistani";
+// var indexNum = nationality.indexOf("n");
+// document.write("String:" + " " + nationality + "<br />Index of 'n':" + " " + indexNum + "<br />");
+
+
+// Exercise 4
+// var greeting = "Hello World";
+// var lastIndex = greeting.lastIndexOf("l");
+// document.write("String:" + " " + greeting + "<br />Last index of 'l':" + " " + lastIndex + "<br />");
+
+
+// Exercise 5
+// nationality = "Pakistani";
+// var atIndex3 = nationality.charAt(3);
+// document.write("String:" + " " + nationality + "<br />Character at index 3:" + " " + atIndex3 + "<br />");
+
+
+// Exercise 6
+// var firstName = prompt("Enter First name");
+// var lastName = prompt("Enter Last name");
+// var capFirst = firstName[0].toUpperCase() + firstName.slice(1).toLowerCase();
+// var capLast = lastName[0].toUpperCase() + lastName.slice(1).toLowerCase();
+// var fullName = alert("Welcome," + " " + capFirst.concat(" " + capLast));
+
+
+// Exercise 7
+// var city = "Hyderabad";
+// var replacement = city.replace("Hyder", "Islam");
+// document.write("City:" + " " + city + "<br />After replacement:" + " " + replacement + "<br />");
+
+
+// Exercise 8
+// var message = "Ali and Sami are best friends. They play cricket and football together.";
+
+// var replacedMsg = message.replace(/and/g , "&");
+// document.write(replacedMsg + "<br />");
+
+
+// Exercise 9
+// var string = "472";
+// document.write("Value:" + " " + string + "<br />Type:" + " " + typeof string + "<br />");
+// var toNum = Number(string);
+// document.write("Value:" + " " + toNum + "<br />Type:" + " " + typeof toNum);
+
+
+// Exercise 10
+// var favSport = prompt("Enter your favorite sport");
+// var upperCase = favSport.toUpperCase();
+// document.write("User input:" + " " + favSport + "<br />Upper case:" + " " + upperCase + "<br /><br />");
+
+
+// Exercise 11
+// var nickname = prompt("Enter your Nickname");
+// var arr = nickname.split(" ");
+
+// for (var i = 0; i < arr.length; i++) {
+//     arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1).toLowerCase();
+// }
+// var titleCase = arr.join(" ");
+
+// document.write("User input:" + " " + nickname + "<br />Title case:" + " " + titleCase + "<br /><br />");
+
+
+// Exercise 12
+// var num = 35.36;
+// var numToString = parseInt(num.toString().replace(".",""), 10);
+
+// document.write("Number:" + " " + num + "<br />Result:" + " " + numToString + "<br /><br />");
+
+
+// Exercise 13
+// var username = prompt("Enter username");
+// var asciiCodes = [33, 44, 46, 64];
+
+// if (!username) {
+//     alert("Please enter a username");
+//     window.location.reload();
+// }
+// for (var i = 0; i < username.length; i++) {
+//         if (username.length < 3 || asciiCodes.includes(username.charAt(i).charCodeAt())) {
+//             alert("Please enter a valid username");
+//             window.location.reload();
+//             break;
+//         }
+// }
+
+
+// Exercise 14
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var isAvailable = false;
+
+// var userSearch = prompt("Welcome to ABC Bakery, What so you want to order?").toLowerCase().trim();
+// for (var i = 0; i <= A.length; i++) {
+//     if (userSearch === A[i]) {
+//         isAvailable = true;
+//         alert(A[i] + " is available at index " + [i] + " in our bakery");
+//         break;
+//     }
+// }
+// if (!isAvailable) {
+//     alert("We are Sorry! " + userSearch + " is not available in our bakery");
+// }
+
+
+// Exercise 15
+// var password = prompt("Enter password");
+// var atIndex0 = password.charCodeAt();
+
+// if (password.length < 6) {
+//     alert("Password must be at least 6 characters long");
+//     window.location.reload();
+// }
+// if (atIndex0 >= 48 && atIndex0 <= 57) {
+//     alert("Password cannot begin with a number\nPlease enter a valid Password");
+//     window.location.reload();
+// }
+// for (var i = 0; i < password.length; i++) {
+//     var flag = false;
+//     if (password.match(/[a-zA-Z]/g) && password.match(/[0-9]/g)) {
+//         var flag = true;
+//         break;
+//     }
+// }
+// if (flag == false) {
+//     alert("Password should contain atleast one alphabet and one number");
+//     window.location.reload();
+// }
+
+
+// Exercise 16
+// var university = "University of Karachi";
+// var arr = university.split("");
+
+// for (var i = 0; i < arr.length; i++){
+// document.write(arr[i] + "<br />");
+// }
+
+
+// Exercise 17
+// var userInput = prompt("Enter your Country", "Pakistan");
+// var lastChar = userInput.charAt(userInput.length-1);
+
+// document.write("User input:" + " " + userInput + "<br />Last character of input:" + " " + lastChar);
+
+
+// Exercise 18
+// var string = "The quick brown fox jumps over the lazy dog";
+// var lowerCase = string.toLowerCase();
+// var match = (lowerCase.match(/the /g)).length;
+
+// document.write("Text:" + " " + string + "<br />There are" + " " + match + " " + "occurence(s) of the word 'the'");
