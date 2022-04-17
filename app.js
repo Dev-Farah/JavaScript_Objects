@@ -1031,7 +1031,7 @@
 
 
 
-// ------------------------------ Chapters 20-21: "STRING METHODS" ------------------------------
+// ------------------------------ Chapters 21-25: "STRING METHODS" ------------------------------
 
 // Exercise 1
 // var firstName = prompt("Enter First name");
@@ -1126,6 +1126,23 @@
 
 // Exercise 13
 // var username = prompt("Enter username");
+
+// if (!username) {
+//         alert("Please enter a username");
+//         window.location.reload();
+// }
+// for (var i = 0; i < username.length; i++) {
+//         var asciiCode = username[i].charCodeAt();
+
+//         if (asciiCode === 33 || asciiCode === 44 || asciiCode === 46 || asciiCode === 64) {
+//             alert("Please enter a valid username");
+//             window.location.reload();
+//             break;
+//         }
+// }
+// OR
+
+// var username = prompt("Enter username");
 // var asciiCodes = [33, 44, 46, 64];
 
 // if (!username) {
@@ -1160,25 +1177,107 @@
 
 // Exercise 15
 // var password = prompt("Enter password");
-// var atIndex0 = password.charCodeAt();
 
-// if (password.length < 6) {
+// if (password.length >= 6) {
+//     if (isNaN(password.charAt(0))) {
+//         for (var i = 0; i < password.length; i++) {
+//             var flag = false;
+//             if (password.match(/[a-zA-Z]/g) && password.match(/[0-9]/g)) {
+//                 var flag = true;
+//                 break;
+//             }
+//         }
+//         if (flag == false) {
+//             alert("Password should contain atleast one alphabet and one number");
+//             window.location.reload();
+//         }
+//     }
+//     else {
+//         alert("Password cannot begin with a number\nPlease enter a valid Password");
+//         window.location.reload();
+//     }
+// }
+// else {
 //     alert("Password must be at least 6 characters long");
 //     window.location.reload();
 // }
-// if (atIndex0 >= 48 && atIndex0 <= 57) {
-//     alert("Password cannot begin with a number\nPlease enter a valid Password");
-//     window.location.reload();
+
+                                                // OR
+
+// ------------------------------ Password Validation Using ASCII Codes ------------------------------
+
+// Problem: If conditions for checking ascii values are not working properly in both solutions
+
+// Solution 1:
+// var password = prompt("Enter password");
+
+// if (password.length >= 6) {
+//         if (isNaN(password[0])) {
+//                 for (var i = 0; i < password.length; i++) {
+//                         var char = password[i];
+//                         var asciiCode = password[i].charCodeAt();
+
+//                         console.log(char + " at " + asciiCode);
+
+//                         // Problem: If Condition NOT WORKING
+//                         if ((asciiCode >= 48 && asciiCode <= 57) && ((asciiCode >= 65 && asciiCode <= 90) || (asciiCode >= 97 && asciiCode <= 122))) {
+//                                 alert(char + " at " + asciiCode + " " + "is an alphanumeric character");
+//                         }
+//                         else {
+//                                 alert("Password should contain atleast one alphabet and atleast one number");
+//                                 // break;
+//                         }
+//                 }
+//         }
+//         else {
+//                 alert("Password cannot begin with a number");
+//         }
 // }
-// for (var i = 0; i < password.length; i++) {
-//     var flag = false;
-//     if (password.match(/[a-zA-Z]/g) && password.match(/[0-9]/g)) {
-//         var flag = true;
-//         break;
+// else {
+//         alert("Password must contain atleast 6 characters");
+// }
+
+
+// // Solution 2:
+
+// var numAsciiCodes = [48, 49, 50, 51, 52, 53, 54, 55, 56, 57];
+// var capAsciiCodes = [65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90];
+// var smallAsciiCodes = [97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122];
+
+// var password = prompt("Enter password");
+// var atIndex0 = password.charAt();
+
+// if (password.length >= 6) {
+//     if (isNaN(atIndex0)) {
+//         for (var i = 0; i < password.length; i++) {
+//             var flag = false;
+//             var includesCap = capAsciiCodes.includes(password.charAt(i).charCodeAt());
+//             var includesSmall = smallAsciiCodes.includes(password.charAt(i).charCodeAt());
+//             var includesNum = numAsciiCodes.includes(password.charAt(i).charCodeAt());
+
+//             console.log(includesCap);
+//             console.log(includesSmall);
+//             console.log(includesNum);
+
+//                     // Problem: If Condition NOT WORKING
+//             if (includesNum && (includesCap || includesSmall)) {
+//                 var flag = true;
+//                 alert("Password contains alphanumeric characters");
+//                 break;
+//             }
+//         }
+//         if (flag == false) {
+//             alert("Password should contain one alphabet and atleast one number");
+//             window.location.reload();
+//         }
+//     }
+//     else {
+//         alert("Password cannot begin with a number\nPlease enter a valid Password");
+//         window.location.reload();
 //     }
 // }
-// if (flag == false) {
-//     alert("Password should contain atleast one alphabet and one number");
+// else {
+//     alert("Password must be at least 6 characters long");
 //     window.location.reload();
 // }
 
@@ -1205,3 +1304,110 @@
 // var match = (lowerCase.match(/the /g)).length;
 
 // document.write("Text:" + " " + string + "<br />There are" + " " + match + " " + "occurence(s) of the word 'the'");
+
+
+
+
+
+// ------------------------------ Chapters 26-30: "MATH METHODS" ------------------------------
+
+// Exercise 1
+// var posInteger = prompt("Enter a positive integer");
+// var flag = false;
+
+// if (posInteger > 0) {
+//     flag = true;
+//     // a
+//     document.write("Number:" + " " + posInteger + "<br />");
+
+//     // b
+//     document.write("Round off value:" + " " + Math.round(posInteger) + "<br />");
+
+//     // c
+//     document.write("Floor value:" + " " + Math.floor(posInteger) + "<br />");
+
+//     // d
+//     document.write("Ceil value:" + " " + Math.ceil(posInteger) + "<br />");
+// }
+
+// if (flag == false) {
+//     alert("Please enter a positive value!");
+// }
+
+
+// Exercise 2
+// var negFloat = prompt("Enter a negative floating point");
+// var flag = false;
+
+// if (negFloat < 0 && negFloat % 1 !== 0) {
+//     flag = true;
+//     // a
+//     document.write("Number:" + " " + negFloat + "<br />");
+
+//     // b
+//     document.write("Round off value:" + " " + Math.round(negFloat) + "<br />");
+
+//     // c
+//     document.write("Floor value:" + " " + Math.floor(negFloat) + "<br />");
+
+//     // d
+//     document.write("Ceil value:" + " " + Math.ceil(negFloat) + "<br />");
+// }
+
+// if (flag == false) {
+//     alert("Please enter a negative floating value!");
+// }
+
+
+// Exercise 3
+// var num = -4;
+// var absoluteNum = Math.abs(num);
+
+// document.write("The absolute value of" + " " + num + " " + "is" + " " + absoluteNum + "<br />");
+
+
+// Exercise 4
+// var rdmDiceValue = Math.floor(Math.random() * 6 + 1);
+
+// document.write("Random dice value:" + " " + rdmDiceValue + "<br />");
+
+
+// Exercise 5
+// var rdmCoinValue = Math.floor(Math.random() * 2 + 1);
+
+// document.write(rdmCoinValue + "<br />");
+
+// if (rdmCoinValue == 1) {
+//     document.write("Random coin value: Tails<br />");
+// }
+// else {
+//     document.write("Random coin value: Heads<br />");
+// }
+
+
+// Exercise 6
+// var rdmNumber = Math.floor(Math.random() * 100 + 1);
+
+// document.write("Random number between 1 and 100:" + " " + rdmNumber + "<br />");
+
+
+// Exercise 7
+// var userWeight = prompt("Enter your weight (in Kilograms)");
+// var parse = parseFloat(userWeight);
+
+// document.write("Your weight is:" + " " + parse + " " + "Kilograms");
+
+
+// Exercise 8
+// var rdmSecretNum = Math.floor(Math.random() * 10 + 1);
+// var userNum = +prompt("Enter a number between 1 and 10");
+
+// var popperEmoji = String.fromCodePoint(0x0001F389);
+// var frowningEmoji = String.fromCodePoint(0x0001F641);
+
+// if (userNum === rdmSecretNum) {
+// alert("Congratulations!" + " " + popperEmoji + " " + "You got it right");
+// }
+// else {
+//     alert(frowningEmoji + " " + "Try again!");
+// }
