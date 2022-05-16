@@ -1411,3 +1411,146 @@
 // else {
 //     alert(frowningEmoji + " " + "Try again!");
 // }
+
+
+
+
+
+// ------------------------------ Chapters 31-34: "DATE METHODS" ------------------------------
+
+// Exercise 1
+// let currentDate = new Date();
+// console.log(currentDate);
+
+
+// Exercise 2
+// let months = [`January`, `February`, `March`, `April`, `May`, `June`, `July`, `August`, `September`, `October`, `November`, `December`];
+// let currentMonth = new Date().getMonth();
+
+// alert(`Current month: ${months[currentMonth]}`);
+
+
+// Exercise 3
+// let daysOfWeek = [`Sun`, `Mon`, `Tue`, `Wed`, `Thu`, `Fri`, `Sat`];
+// let currentDay = new Date().getDay();
+
+// alert(`Today is ${daysOfWeek[currentDay]}`);
+
+
+// Exercise 4
+// let currentDay = new Date().getDay();
+
+// (currentDay === 0 || currentDay === 6) ? alert(`It's Fun Day!`) 
+// : alert(`Today is another chance to get better`);
+
+
+// Exercise 5
+// let currentDate = new Date().getDate();
+
+// (currentDate < 16) ? alert(`First fifteen days of the month`) 
+// : alert(`Last days of the month`);
+
+
+// Exercise 6
+// let currentDate = new Date();
+// let milliSeconds = new Date().getTime();
+// let minutes = Math.floor((new Date().getTime()) / (1000 * 60));
+
+// console.log(`Current Date: ${currentDate}
+// Elapsed milliseconds since Januray 1, 1970: ${milliSeconds}
+// Elapsed minutes since Januray 1, 1970: ${minutes}`);
+
+
+// Exercise 7
+// let currentHour = new Date().getHours();
+
+// (currentHour < 12) ? alert(`It's ${currentHour} AM`)
+// : (currentHour === 12) ? alert(`It's ${currentHour} PM`)
+// : alert(`It's ${currentHour -= 12} PM`);
+
+
+// Exercise 8
+// let laterDate = new Date(2021, 0, 0);
+// console.log(`Last Date: ${laterDate}`);
+// // OR
+// var lastDayOfYear = new Date(2020, 11 + 1, 0);
+// console.log(`Last Date: ${lastDayOfYear}`);
+// // OR
+// function lastDay(y = 2022, m = 11) {
+//     return new Date(y, m + 1, 0);
+// }
+// console.log(`Last Date: ${lastDay(2020, 11)}`);
+
+
+// Exercise 9
+// let startingDate = new Date(2022, 3, 2, 18, 50, 33, 0); // Parameters could equally be: `Apr 2, 2022, 18:50:33`
+// let currentDate = new Date();
+// let startingMilliSecs = startingDate.getTime();
+// let currentMilliSecs = currentDate.getTime();
+// let diff = currentMilliSecs - startingMilliSecs;
+
+// console.log(`${Math.floor(diff / (1000 * 60 * 60 * 24))} days have past since 1st Ramadan, 1443 AH (2022)`);
+
+
+// Exercise 10
+// let refDate = new Date(2015, 11, 5, 22, 50, 16);
+// let yearStart = new Date(2015, 0);
+// let diff = refDate - yearStart;
+
+// console.log(`On reference date: ${refDate},\n${Math.round(diff / (1000))} seconds have passed since`);
+
+
+// Exercise 11
+// let currentDate = new Date();
+// let changeDate = new Date();
+
+// let subtractHour = changeDate.setHours(changeDate.getHours() - 1);
+// let anHourAhead = new Date(subtractHour);
+
+// console.log(`Current date: ${currentDate}\n1 hour ago, it was ${anHourAhead}`);
+
+
+// Exercise 12
+// let currentDate = new Date();
+// let changeDate = new Date();
+
+// let subtractYear = changeDate.setFullYear(changeDate.getFullYear() - 100);
+// let aYearAhead = new Date(subtractYear);
+
+// console.log(`Current date: ${currentDate}\n100 years back, it was ${aYearAhead}`);
+
+
+// Exercise 13
+// let userAge = +prompt(`Enter your age`);
+// let subtractYears = new Date().setFullYear(new Date().getFullYear() - userAge);
+// let birthYear = new Date(subtractYears).getFullYear();
+
+// alert(`Your age is ${userAge}\nYour birth year is ${birthYear}`);
+
+
+// Exercise 14
+// let yourName = prompt(`To generate your K-Electric bill\nEnter your full name`);
+// let arr = yourName.split(` `);
+// for (let i = 0; i < arr.length; i++) {
+//     arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1).toLowerCase();
+// }
+// let customerName = arr.join(` `);
+
+// let months = [`January`, `February`, `March`, `April`, `May`, `June`, `July`, `August`, `September`, `October`, `November`, `December`];
+// let currentMonth = new Date().getMonth();
+
+// let noOfUnits = 410;
+// let chargesPerUnit = 16;
+
+// let netAmount = noOfUnits * chargesPerUnit;
+// let latePaymentSurcharge = 350;
+// let grossAmount = netAmount + latePaymentSurcharge;
+
+// document.write(`<h1>K-Electric bill</h1>
+// Customer Name: <b>${customerName}</b><br />
+// Month: <b>${months[currentMonth]}</b><br />
+// Number of units: <b>${noOfUnits}</b><br />
+// Charges per unit: <b>${chargesPerUnit}</b><br /><br />
+// Net Amount Payable (within Due Date): <b>${netAmount.toFixed(2)}</b><br />
+// Late Payment Surcharge: <b>${latePaymentSurcharge}</b><br />
+// Gross Amount Payable (after Due Date): <b>${grossAmount.toFixed(2)}</b><br />`);
