@@ -1202,7 +1202,7 @@
 //     window.location.reload();
 // }
 
-                                                // OR
+// OR
 
 // ------------------------------ Password Validation Using ASCII Codes ------------------------------
 
@@ -1471,15 +1471,15 @@
 
 // Exercise 8
 // let laterDate = new Date(2021, 0, 0);
-// console.log(`Last Date: ${laterDate}`);
+// console.log(`Later Date: ${laterDate}`);
 // // OR
 // var lastDayOfYear = new Date(2020, 11 + 1, 0);
-// console.log(`Last Date: ${lastDayOfYear}`);
+// console.log(`Later Date: ${lastDayOfYear}`);
 // // OR
 // function lastDay(y = 2022, m = 11) {
 //     return new Date(y, m + 1, 0);
 // }
-// console.log(`Last Date: ${lastDay(2020, 11)}`);
+// console.log(`Later Date: ${lastDay(2020, 11)}`);
 
 
 // Exercise 9
@@ -1489,7 +1489,7 @@
 // let currentMilliSecs = currentDate.getTime();
 // let diff = currentMilliSecs - startingMilliSecs;
 
-// console.log(`${Math.floor(diff / (1000 * 60 * 60 * 24))} days have past since 1st Ramadan, 1443 AH (2022)`);
+// console.log(`${Math.floor(diff / (1000 * 60 * 60 * 24))} days have passed since 1st Ramadan, 1443 AH (2022)`);
 
 
 // Exercise 10
@@ -1554,3 +1554,219 @@
 // Net Amount Payable (within Due Date): <b>${netAmount.toFixed(2)}</b><br />
 // Late Payment Surcharge: <b>${latePaymentSurcharge}</b><br />
 // Gross Amount Payable (after Due Date): <b>${grossAmount.toFixed(2)}</b><br />`);
+
+
+
+
+
+// ------------------------------ Chapters 35-38: "FUNCTION" ------------------------------
+
+// Exercise 1
+// function currentDate() {
+//     let now = new Date();
+//     return now;
+// }
+// console.log(currentDate());
+
+
+// Exercise 2
+// function fullName(first = "", last = "") {
+//     first = prompt("Enter First Name");
+//     last = prompt("Enter Last Name");
+//     let fullName = `${first} ${last}`;
+//     return fullName;
+// }
+// alert(`Hi ${fullName()}! Welcome to our website`);
+
+
+// // Exercise 3
+// function sum(val1, val2) {
+//     val1 = +prompt("Enter a number");
+//     val2 = +prompt("Enter another number");
+//     let sum = val1 + val2;
+//     return sum;
+// }
+// alert(`The sum is ${sum()}`);
+
+
+// Exercise 4
+// function calc(val1, opt, val2) {
+//     val1 = +prompt("Enter a number");
+//     opt = prompt("Specify an operator");
+//     val2 = +prompt("Enter another number");
+//     let calculation = eval(val1 + opt + val2);
+//     return calculation;
+// }
+// alert(`Answer: ${calc()}`);
+
+
+// Exercise 5
+// function square(val = 0) {
+//     val = +prompt("Enter a number");
+//     let square = val * val;
+//     return square;
+//     // OR
+//     // let square = Math.pow(val, 2);
+//     // return square;
+//     // OR
+//     // let square = val ** 2;
+//     // return square;
+// }
+// alert(`Square: ${square()}`);
+
+
+// Exercise 6
+// function factorialOf(num) {
+//     num = +prompt("Enter a number");
+
+//     if (num === 0 || num === 1) {
+//         return 1;
+//     }
+//     for (let i = num - 1; i >= 1; i--) {
+//         num *= i;
+//     }
+//     return num;
+// }
+// alert(`Factorial: ${factorialOf()}`);
+
+
+// Exercise 7
+// function counting(startNum, endNum) {
+//     startNum = +prompt("Enter Start Number");
+//     endNum = +prompt("Enter End Number");
+
+//     if (startNum < endNum) {
+//         for (let i = startNum; i <= endNum; i++) {
+//             console.log(i);
+//         }
+//     } else if (endNum < startNum) {
+//         for (let i = startNum; i >= endNum; i--) {
+//             console.log(i);
+//         }
+//     } else if (startNum === endNum) {
+//         console.log(startNum);
+//     } else {
+//         alert(`Please enter a number`);
+//     }
+// }
+// counting();
+
+
+// Exercise 8
+// function hypotenuse(base, perpendicular) {
+//     base = +prompt("Enter base value");
+//     perpendicular = +prompt("Enter perpendicular value");
+
+//     function calculateSquare() {
+//         square = {
+//         baseSquare: base ** 2,
+//         perpSquare: perpendicular ** 2,
+//         }
+//         return square;
+//     }
+//     let hypotenuse = +Math.sqrt(calculateSquare().baseSquare + calculateSquare().perpSquare).toFixed(2);
+//     return hypotenuse;
+// }
+// console.log(`Hypotenuse is ${hypotenuse()}`);
+// // OR
+// function hypotenuse(base, perpendicular) {
+//     base = +prompt("Enter base value");
+//     perpendicular = +prompt("Enter perpendicular value");
+
+//     // return +Math.hypot(base, perpendicular).toFixed(2);
+//     // OR
+//     return +Math.sqrt(base * base + perpendicular * perpendicular).toFixed(2);
+// }
+// console.log(`Hypotenuse is ${hypotenuse()}`);
+
+
+// Exercise 9
+// // Arguments as value
+// function areaOfRectangle(width, height) {
+
+//     let a = width * height;
+//     return a;
+// }
+// console.log(`Area of Rectangle = ${areaOfRectangle(4, 5)} square units`);
+// // OR
+// console.log(`Area of Rectangle = ${areaOfRectangle(prompt("Enter width"), prompt("Enter height"))} square units`);
+
+// // Arguments as variables
+// function areaOfRectangle(width, height) {
+
+//     let a = width * height;
+//     return a;
+// }
+// let width = prompt("Enter width");
+// let height = prompt("Enter height");
+
+// console.log(`Area of Rectangle = ${areaOfRectangle(width, height)} square units`);
+
+
+// Exercise 10
+// function palindrome(str) {
+//     str = prompt("Enter String");
+//     let re = /[\W_]/g;
+//     let lowRegStr = str.toLowerCase().replace(re, '');
+//     let reverseStr = lowRegStr.split('').reverse().join('');
+//     return reverseStr === lowRegStr;
+// }
+// if (palindrome()) {
+//     alert(`It's a palindrome`);
+// } else {
+//     alert(`It's not a palindrome`);
+// }
+
+
+// Exercise 11
+// function titleCase(str) {
+//     str = prompt(`Enter string`).split(" ");
+//     for (let i = 0; i < str.length; i++) {
+//         str[i] = str[i][0].toUpperCase() + str[i].slice(1).toLowerCase();
+//     }
+//     let titleCase = str.join(` `);
+//     return titleCase;
+// }
+// alert(titleCase());
+
+
+// Exercise 12
+// function longestWord(string) {
+//     string = prompt("Enter string").split(" ");
+//     let longest = 0;
+//     let word = null;
+//     for (let i = 0; i < string.length - 1; i++) {
+//         if (longest < string[i].length) {
+//             longest = string[i].length;
+//             word = string[i];
+//         }
+//     }
+//     return word;
+// }
+// alert(longestWord());
+
+
+// Exercise 13
+// function noOfOccurences(string, letter) {
+//     var string = prompt("Enter String");
+//     var letter = prompt("Enter a letter");
+//     var occurence = (string.match(new RegExp(letter, "g")) || []).length;
+//     return occurence;
+// }
+// alert(noOfOccurences());
+
+
+// Exercise 14
+// var radius = +prompt("Enter radius");
+
+// function calcCircumference(radius) {
+//     var cirCircumference = +(2 * Math.PI * radius).toFixed(2);
+//     return cirCircumference;
+// }
+// console.log("The circumference is" + " " + calcCircumference(radius) + "cm");
+
+// function calcArea(radius) {
+//     var area = +(Math.PI * (radius ** 2)).toFixed(2);
+//     return area;
+// }
+// console.log("The area is" + " " + calcArea(radius));
