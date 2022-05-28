@@ -1770,3 +1770,240 @@
 //     return area;
 // }
 // console.log("The area is" + " " + calcArea(radius));
+
+
+
+
+
+// ------------------------------ Chapters 43-48: "EVENTS" ------------------------------
+
+// Exercise 1
+// document.write("<a href='JavaScript:void(0)' onclick = 'alertBox()'>Click here</a>");
+// function alertBox() {
+//     alert("This is a link Event");
+// }
+
+
+// Exercise 2
+// document.write('<h2>Mobile Phone lookup</h2>' +
+// '<div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center;">' +
+// '<div onclick="mobileMsg()" style="border: 2px solid black; width: 200px; height: 250px; display: flex; justify-content: center; align-items: center;"><figure><img src="./images/iPhone X - Silver.png" width="215px" alt="Mobile Image"><figcaption>iPhone X - Silver</figcaption></figure></div>' +
+// '<div onclick="mobileMsg()" style="border: 2px solid black; width: 200px; height: 250px; display: flex; justify-content: center; align-items: center;"><figure><img src="./images/iPhone 7 - Gold straight.png" width="200px" alt="Mobile Image"><figcaption>iPhone 7 - Gold</figcaption></figure></div>' +
+// '<div onclick="mobileMsg()" style="border: 2px solid black; width: 200px; height: 250px; display: flex; justify-content: center; align-items: center;"><figure><img src="./images/iPhone 7 - rosegold.png" width="215px" alt="Mobile Image"><figcaption>iPhone 7 - Rose Gold</figcaption></figure></div>' +
+// '<div onclick="mobileMsg()" style="border: 2px solid black; width: 200px; height: 250px; display: flex; justify-content: center; align-items: center;"><figure><img src="./images/iPhone 11 Pro - Pinegreen.png" width="200px" alt="Mobile Image"><figcaption>iPhone 11 Pro - Pinegreen</figcaption></figure></div>' +
+// '<div onclick="mobileMsg()" style="border: 2px solid black; width: 200px; height: 250px; display: flex; justify-content: center; align-items: center;"><figure><img src="./images/iPhone 11 Pro Max - Blue.png" width="190px" alt="Mobile Image"><figcaption>iPhone 11 Pro Max - Blue</figcaption></figure></div>' +
+// '</div><br /><br />');
+
+// function mobileMsg() {
+//     alert("Thanks for purchasing a phone from us");
+// }
+
+
+// Exercise 3
+// document.write('<table id="table">' +
+//         '<thead><th>Index</th><th>Name</th><th>Class</th></thead>' +
+//         '<tbody><tr><td>0</td><td>Finn</td><td>10</td><td><button onclick="deleteTableRow(this)">Delete</button></td></tr>' +
+//             '<tr><td>1</td><td>Ella</td><td>8</td><td><button onclick="deleteTableRow(this)">Delete</button></td></tr>' +
+//             '<tr><td>2</td><td>Jude</td><td>6</td><td><button onclick="deleteTableRow(this)">Delete</button></td></tr>' +
+//             '<tr><td>3</td><td>Kai</td><td>9</td><td><button onclick="deleteTableRow(this)">Delete</button></td></tr>' +
+//             '<tr><td>4</td><td>Ivy</td><td>7</td><td><button onclick="deleteTableRow(this)">Delete</button></td></tr>' +
+//             '<tr><td>5</td><td>Sam</td><td>10</td><td><button onclick="deleteTableRow(this)">Delete</button></td></tr>' +
+//             '<tr><td>6</td><td>Leo</td><td>10</td><td><button onclick="deleteTableRow(this)">Delete</button></td></tr>' +
+//             '<tr><td>7</td><td>Eve</td><td>5</td><td><button onclick="deleteTableRow(this)">Delete</button></td></tr>' +
+//             '<tr><td>8</td><td>Ada</td><td>7</td><td><button onclick="deleteTableRow(this)">Delete</button></td></tr>' +
+//             '<tr><td>9</td><td>Zara</td><td>8</td><td><button onclick="deleteTableRow(this)">Delete</button></td></tr>' +
+//         '</tbody></table>');
+
+// var table = document.getElementById("table");
+// function deleteTableRow(element) {
+//     element.parentNode.parentNode.remove();
+// }
+// // OR
+// var table = document.getElementById('table');
+// for (var i = 1; i < table.rows.length; i++) {
+//     table.rows[i].cells[3].onclick = function () {
+//         var c = confirm("Do you want to delete this row");
+//         if (c === true) {
+//             index = this.parentElement.rowIndex;
+//             table.deleteRow(index);
+//         }
+//         console.log(index);
+//     }
+// }
+
+
+// Exercise 4
+// document.write(`<img src="./Images/Strawberry.jpg" onmouseover="imageToggle('mouseover', this)"
+//         onmouseout="imageToggle('mouseout', this)" width="600px" alt="">`);
+
+// function imageToggle(condition, e) {
+//     if (condition === "mouseover") {
+//         e.src = "./Images/Strawberry-2.jpg";
+//     } else {
+//         e.src = "./Images/Strawberry.jpg";
+//     }
+// }
+
+
+// Exercise 5
+// document.write(`<h1>Counter <span id="counter">0</span></h1>
+//     <button id="increase" onclick="counter('increase')">+</button>
+//     <button id="decrease" onclick="counter('decrease')">-</button>
+//     <button id="reset" onclick="counter('reset')">Reset</button>`);
+
+// var count = 0;
+// function counter(condition) {
+//     var counter = document.getElementById("counter");
+//     if (condition === "increase") {
+//         ++count;
+//     } else if (condition === "decrease") {
+//         if (count > 0) {
+//             --count;
+//         }
+//     } else {
+//         count = 0;
+//     }
+//     counter.innerHTML = count;
+// }
+
+
+
+
+
+// ------------------------------ Chapters 49-52: "EVENTS" ------------------------------
+
+// Exercise 1
+// document.write(`<form id="form">
+//         <fieldset style="max-width: 400px">
+//         <legend><h2>Sign up</h2></legend>
+//         <input type="text" placeholder="Full Name" name="Full Name" maxlength="15" required><br /><br />
+//         <input type="email" placeholder="Email" name="email" required><br /><br />
+//         <input type="password" placeholder="Password" name="password" minlength="6" maxlength="8" required><br /><br />
+//         <input type="password" placeholder="Confirm password" name="password" minlength="6" maxlength="8" required><br /><br />
+//         <label for="agree">
+//             <input type="checkbox" name="terms-&-conditions" id="agree" required>
+//             I agree to the <a href="#">Terms & Conditions</a>
+//         </label><br /><br />
+//         <button type="button" onclick="getValues()">Create account</button><br /><br />
+//         <small>Already have an account?&nbsp;&nbsp;<a href="#">Log In</a></small>
+//     </fieldset>
+// </form>`);
+
+// var form = document.getElementById("form");
+
+// function getValues() {
+//     if (!(form[1].value && form[2].value && form[3].value && form[4].value)) {
+//         alert("Please fill out all fields");
+//     } else {
+//         document.write("<h1>Successfully Signed up!</h1><h2>Your Details:</h2>");
+//         for (var i = 1; i < form.length - 3; i++) {
+//             document.write("<b>" + form[i].placeholder + ":</b> " + form[i].value + '<br />');
+//         }
+//     }
+// }
+
+
+// Exercise 2
+// document.write(`<div id="product">
+//         <h1>Popular products</h1>
+//         <figure>
+//             <img src="./images/DATEJUST-36.webp" width="300px" alt="DATEJUST-36">
+//             <figcaption>
+//                 <h3>DATEJUST 36</h3>
+//                 <p>Oyster, 36 mm, Oystersteel and Everose gold</p>
+//             </figcaption>
+//             <button onclick="getDetails()" style="padding: 10px; border: none; 
+//             background-color: rgb(249, 222, 159)">Read more</button>
+//         </figure>
+//     </div>`);
+
+// var product = document.getElementById("product");
+// var btn = product.getElementsByTagName("button");
+
+// function getDetails() {
+//     product.innerHTML = `<figure style="display: flex; align-items: flex-end;">
+//     <img src="./images/DATEJUST-36.webp" width="600px" alt="DATEJUST-36">
+//     <figcaption><small>Classic Watches</small><h3>DATEJUST 36</h3><p>Oyster, 36 mm, Oystersteel and Everose gold</p>
+//     <h3>THIS OYSTER PERPETUAL DATEJUST 36 IN OYSTERSTEEL AND EVEROSE GOLD FEATURES A SILVER,
+//     PALM-MOTIF DIAL AND A JUBLIEE BRACELET.</h3>
+//     <h3>Model features</h3>
+//     <ul>
+//     <li>The Fluted Bezel</li>
+//     <li>Everose Rolesor</li>
+//     <li>The Jubliee Bracelet</li>
+//     <li>The Cyclops Lens</li>
+//     <li>3235 Movement</li>
+//     </ul>
+//     <button onclick="addToCart()" style="padding: 10px; border: none; 
+//     background-color: rgb(249, 222, 159); margin-right: 30px;">Add to Cart</button>
+//     <a href="./index.html"><button style="padding: 10px; border: none; 
+//             background-color: rgb(249, 222, 159)">Go Back</button></a>
+//     </figcaption> 
+//     </figure>`
+// }
+// function addToCart() {
+//     alert("Item added to your cart");
+// }
+
+
+// Exercise 3
+// document.write(`<form id="std-form">
+// <h2>Student Data</h2>
+// <label for="name">Name:
+// </label>
+// <input type="text" id="name">
+
+// <label for="class">Class:
+// </label>
+// <input type="text" id="class">
+// <button type="button" id="add" onclick="addData(this)">Add</button>
+// <br /><br />
+// <table id="table">
+//     <thead>
+//         <th>Index</th>
+//         <th>Name</th>
+//         <th>Class</th>
+//     </thead>
+//     <tbody id="std-data">
+    
+//     </tbody>
+// </form>`);
+
+// function addData(element) {
+
+//     var tBody = document.getElementById("std-data");
+//     var nameInput = element.parentNode.childNodes[5];
+//     var classInput = element.previousSibling.previousSibling;
+//     var count = 1;
+
+//     if (!nameInput.value || !classInput.value) {
+//         alert("Please enter Student Data");
+//     } else {
+//         tBody.innerHTML += `<tr>
+//             <td>${count}</td>
+//             <td>${nameInput.value}</td>
+//             <td>${classInput.value}</td>
+//             <td><button type="button" id="edit" onclick="editData(this)">Edit</button></td>
+//             <td><button type="button" id="delete" onclick="deleteTableRow(this)">Delete</button></td>
+//             </tr>`;
+//         nameInput.value = ""
+//         classInput.value = ""
+//     }
+// }
+
+// function deleteTableRow(element) {
+//     element.parentNode.parentNode.remove();
+// }
+
+// function editData(element) {
+//     var form = document.getElementById("std-form");
+//     // var input = form.getElementsByTagName("input");
+//     var stdName = element.parentNode.parentNode.childNodes[3];
+//     var stdClass = element.parentNode.parentNode.childNodes[5];
+
+//     var editName = prompt("Edit Name", stdName.innerHTML);
+//     var editClass = prompt("Edit Class", stdClass.innerHTML);
+
+//     stdName.innerHTML = editName;
+//     stdClass.innerHTML = editClass;
+// }
