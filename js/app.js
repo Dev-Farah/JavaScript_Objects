@@ -2007,3 +2007,64 @@
 //     stdName.innerHTML = editName;
 //     stdClass.innerHTML = editClass;
 // }
+
+
+
+
+
+// ------------------------------ Chapters 58-67: "DOM" ------------------------------
+
+// Exercise 1   // Go to index.html for html code
+// // 1(i)
+// var mainContent = document.getElementById("main-content");
+
+// // 1(ii)
+// console.log(mainContent.childNodes);
+
+// // 1(iii)
+// var render = mainContent.getElementsByClassName("render");
+// for (var i = 0; i < render.length; i++) {
+//     console.log(render[i].innerHTML);
+// }
+
+// // 1(iv)
+// var firstName = document.getElementById("first-name");
+// firstName.value = "Mike";
+
+// // 1(v)
+// var lastName = document.getElementById("last-name");
+// var email = document.getElementById("email");
+// lastName.value = "Smith";
+// email.value = "mike@gmail.com";
+
+
+// // Exercise 2   // Go to index.html for html code
+// // 2(i)
+// var form = document.getElementById("form-content");
+// console.log("Node type of id 'form-content':" + " " + form.nodeType);
+
+// // 2(ii)
+// var lastName = document.getElementById("lastName");
+// console.log("Node type of id 'lastName':" + " " + form.nodeType);
+
+// var childNodeOfLastName = lastName.childNodes[0];
+// console.log("Node type of child node of id 'lastName':" + " " + childNodeOfLastName.nodeType);
+
+// // 2(iii)
+// var lastName = document.getElementById("lastName");
+// lastName.textContent = "Last Name: Abraham";
+
+// // 2(iv)
+// var content = document.getElementById("main-content");
+// console.log(content.firstChild);
+// console.log(content.lastChild);
+
+// // 2(v)
+// var lastName = document.getElementById("lastName");
+// console.log(lastName.nextSibling);
+// console.log(lastName.previousSibling);
+
+// // 2(vi)
+// var email = document.getElementById("email");
+// console.log(email.parentNode);
+// console.log("Node type of id 'email':" + " " + email.nodeType);
