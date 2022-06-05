@@ -1202,85 +1202,6 @@
 //     window.location.reload();
 // }
 
-// OR
-
-// ------------------------------ Password Validation Using ASCII Codes ------------------------------
-
-// Problem: If conditions for checking ascii values are not working properly in both solutions
-
-// Solution 1:
-// var password = prompt("Enter password");
-
-// if (password.length >= 6) {
-//         if (isNaN(password[0])) {
-//                 for (var i = 0; i < password.length; i++) {
-//                         var char = password[i];
-//                         var asciiCode = password[i].charCodeAt();
-
-//                         console.log(char + " at " + asciiCode);
-
-//                         // Problem: If Condition NOT WORKING
-//                         if ((asciiCode >= 48 && asciiCode <= 57) && ((asciiCode >= 65 && asciiCode <= 90) || (asciiCode >= 97 && asciiCode <= 122))) {
-//                                 alert(char + " at " + asciiCode + " " + "is an alphanumeric character");
-//                         }
-//                         else {
-//                                 alert("Password should contain atleast one alphabet and atleast one number");
-//                                 // break;
-//                         }
-//                 }
-//         }
-//         else {
-//                 alert("Password cannot begin with a number");
-//         }
-// }
-// else {
-//         alert("Password must contain atleast 6 characters");
-// }
-
-
-// // Solution 2:
-
-// var numAsciiCodes = [48, 49, 50, 51, 52, 53, 54, 55, 56, 57];
-// var capAsciiCodes = [65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90];
-// var smallAsciiCodes = [97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122];
-
-// var password = prompt("Enter password");
-// var atIndex0 = password.charAt();
-
-// if (password.length >= 6) {
-//     if (isNaN(atIndex0)) {
-//         for (var i = 0; i < password.length; i++) {
-//             var flag = false;
-//             var includesCap = capAsciiCodes.includes(password.charAt(i).charCodeAt());
-//             var includesSmall = smallAsciiCodes.includes(password.charAt(i).charCodeAt());
-//             var includesNum = numAsciiCodes.includes(password.charAt(i).charCodeAt());
-
-//             console.log(includesCap);
-//             console.log(includesSmall);
-//             console.log(includesNum);
-
-//                     // Problem: If Condition NOT WORKING
-//             if (includesNum && (includesCap || includesSmall)) {
-//                 var flag = true;
-//                 alert("Password contains alphanumeric characters");
-//                 break;
-//             }
-//         }
-//         if (flag == false) {
-//             alert("Password should contain one alphabet and atleast one number");
-//             window.location.reload();
-//         }
-//     }
-//     else {
-//         alert("Password cannot begin with a number\nPlease enter a valid Password");
-//         window.location.reload();
-//     }
-// }
-// else {
-//     alert("Password must be at least 6 characters long");
-//     window.location.reload();
-// }
-
 
 // Exercise 16
 // var university = "University of Karachi";
@@ -1965,7 +1886,7 @@
 //         <th>Class</th>
 //     </thead>
 //     <tbody id="std-data">
-    
+
 //     </tbody>
 // </form>`);
 
@@ -2068,3 +1989,176 @@
 // var email = document.getElementById("email");
 // console.log(email.parentNode);
 // console.log("Node type of id 'email':" + " " + email.nodeType);
+
+
+
+
+
+// ------------------------------ Chapters 69-75: "OBJECTS" ------------------------------
+
+// Exercise 1
+// var itemsArray = [
+//     {
+//         name: "juice",
+//         price: 50,
+//         quantity: 3
+//     },
+//     {
+//         name: "cookie",
+//         price: 30,
+//         quantity: 9
+//     },
+//     {
+//         name: "shirt",
+//         price: 880,
+//         quantity: 1
+//     },
+//     {
+//         name: "pen",
+//         price: 100,
+//         quantity: 2
+//     }
+// ];
+
+// var totalPriceOfItem1 = itemsArray[0].price * itemsArray[0].quantity;
+// var totalPriceOfItem2 = itemsArray[1].price * itemsArray[1].quantity;
+// var totalPriceOfItem3 = itemsArray[2].price * itemsArray[2].quantity;
+// var totalPriceOfItem4 = itemsArray[3].price * itemsArray[3].quantity;
+
+// console.log("Total price of" + " " + itemsArray[0].name + " " + "is" + " " + totalPriceOfItem1 + " Rs");
+// console.log("Total price of" + " " + itemsArray[1].name + " " + "is" + " " + totalPriceOfItem2 + " Rs");
+// console.log("Total price of" + " " + itemsArray[2].name + " " + "is" + " " + totalPriceOfItem3 + " Rs");
+// console.log("Total price of" + " " + itemsArray[3].name + " " + "is" + " " + totalPriceOfItem4 + " Rs");
+
+// var totalPriceOfAll = totalPriceOfItem1 + totalPriceOfItem2 + totalPriceOfItem3 + totalPriceOfItem4;
+// console.log("Total price of all items is" + " " + totalPriceOfAll + " Rs");
+
+// // OR
+
+// for (var i = 0; i < itemsArray.length; i++) {
+//     console.log("Total price of" + " " + itemsArray[i].name + " " + "is" + " " + itemsArray[i].price * itemsArray[i].quantity + " Rs");
+// }
+
+// var totalPriceOfAll = null;
+// for (var i = 0; i < itemsArray.length; i++) {
+//     totalPriceOfAll += itemsArray[i].price * itemsArray[i].quantity
+// }
+// console.log("Total price of all items is" + " " + totalPriceOfAll + " Rs");
+
+
+// Exercise 2
+// var userData = {
+//     name: "David",
+//     email: "david@email.com",
+//     password: "who knows",
+//     age: 26,
+//     gender: "Male",
+//     city: "Toronto",
+//     country: "Canada",
+// };
+
+// var checkAge = userData.hasOwnProperty("age");
+// var checkCountry = userData.hasOwnProperty("country");
+// var checkFirstName = userData.hasOwnProperty("firstName");
+// var checkLastName = userData.hasOwnProperty("lastName");
+
+// console.log(checkAge);
+// console.log(checkCountry);
+// console.log(checkFirstName);
+// console.log(checkLastName);
+
+
+// Exercise 3
+// // Constructor Function:
+// function CartoonChar(name, age, friends, city) {
+//     this.charName = name;
+//     this.charAge = age;
+//     this.charFriends = friends;
+//     this.charCity = city;
+// }
+
+// // Creating records using the constructor
+// var char1 = new CartoonChar("Tom", 8, ["Butch", "Topsy", "Toodles Galore"], "New York City");
+// var char2 = new CartoonChar("Jerry", 5, ["Nibbles", "Quacker"], "New York City");
+// var char3 = new CartoonChar("Alvin", 8, ["Jeanette", "Brittany", "Eleanor"], "California");
+// var char4 = new CartoonChar("Charlie Brown", 8, ["Linus", "Snoopy", "Franklin", "Peppermint Patty"], "Hennepin County");
+// var char5 = new CartoonChar("Mickey Mouse", 2, ["Minnie Mouse", "Donald Duck", "Pluto"], "Mouseton");
+
+
+// Exercise 4
+// function Citizens(name, gender, address, education, profession) {
+//     this.name = name;
+//     this.gender = gender;
+//     this.address = address;
+//     this.education = education;
+//     this.profession = profession;
+// }
+
+// // Form
+// document.write('<form action="javascript:void(0)">' +
+//     '<p>Name:<br />' +
+//     '<input type="text" placeholder="Enter Name" name="name" id="name" minlength="3" maxlength="20" required>' +
+//     '</p>' +
+
+//     '<p>Gender:<br />' +
+//     '<label for="radio-box1">' +
+//     '<input type="radio" name="gender" id="radio-box1" value="male" checked required>Male' +
+//     '</label>' +
+//     '<label for="radio-box2">' +
+//     '<input type="radio" name="gender" id="radio-box2" value="female" required>Female' +
+//     '</label>' +
+//     '</p>' +
+
+//     '<p>Address:<br />' +
+//     '<input type="text" placeholder="Enter Address" name="address" id="address" minlength="10" maxlength="70" required>' +
+//     '</p>' +
+
+//     '<p><label for="education">What is the highest level of degree you have earned?<br />' +
+//     '<select name="degree" id="education" required>' +
+//     '<option value="#" selected disabled>Select your option</option>' +
+//     '<option value="M. Arch">M. Arch</option>' +
+//     '<option value="MD-Phd">MD-Phd</option>' +
+//     '<option value="MSC-SE">MSC-SE</option>' +
+//     '<option value="PhD Statistics">PhD Statistics</option>' +
+//     '<option value="Other">Other</option>' +
+//     '</select>' +
+//     '</label>' +
+//     '</p>' +
+
+//     '<p><label for="profession">What is your profession?<br />' +
+//     '<select name="profession" id="profession" required>' +
+//     '<option value="#" selected disabled>Select your option</option>' +
+//     '<option value="Architect">Architect</option>' +
+//     '<option value="Physician-scientist">Physician-scientist</option>' +
+//     '<option value="Software Developer">Software Developer</option>' +
+//     '<option value="Statistician">Statistician</option>' +
+//     '<option value="Other">Other</option>' +
+//     '</select>' +
+//     '</label>' +
+//     '</p>' +
+//     '<button type="submit" onclick="saveData()">Submit</button>' +
+//     '</form>'
+// )
+
+// let citizensArr = [];
+// var count = 1;
+// function saveData() {
+//     var citizen = {
+//         sno: count++,
+//         name: document.getElementById("name").value,
+//         gender: document.getElementById("radio-box1").value,
+//         gender: document.getElementById("radio-box2").value,
+//         address: document.getElementById("address").value,
+//         education: document.getElementById("education").value,
+//         profession: document.getElementById("profession").value
+//     };
+//     // Add entries to the array of objects
+//     citizensArr.push(citizen);
+
+//     // Reset form fields for next entries
+//     document.forms[0].reset();
+
+//     // Save to local storage
+//     localStorage.setItem("citizensData", JSON.stringify(citizensArr));
+// }
+// // localStorage.clear()
