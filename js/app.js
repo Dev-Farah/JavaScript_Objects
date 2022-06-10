@@ -1696,6 +1696,230 @@
 
 
 
+// ------------------------------ Chapters 39-42: "FUNCTIONS, SWITCH STATEMENTS, WHILE... DO-WHILE LOOPS" ------------------------------
+
+// Exercise 1
+// var a = +prompt("Enter a number");
+// var b = +prompt("Enter its power");
+// function calcPower(a, b) {
+//     return a ** b;
+// }
+// console.log(calcPower(a, b));
+
+
+// Exercise 2
+// var year = +prompt("Enter a year");
+
+// function leap(year) {
+//     if (year % 4 == 0 && year % 100 !== 0 || year % 400 == 0) {
+//         return alert("Its a leap year");
+
+//     } else {
+
+//         return alert("Not a leap year");
+//     }
+//     // OR
+//     // var leapYear = new Date(year, 1, 29).getDate() === 29;
+//     // if (leapYear) {
+//     //     return alert("Its a leap year");
+//     // } else {
+//     //     return alert("Not a leap year");
+//     // }
+// }
+
+// leap(year);
+
+
+// Exercise 3
+// var a = +prompt("Enter length of side a");
+// var b = +prompt("Enter length of side b");
+// var c = +prompt("Enter length of side c");
+
+// function s() {
+//     var s = (a + b + c) / 2;
+//     return s;
+// }
+// console.log(s(a, b, c));
+
+// function areaOfTriangle(s) {
+//     var area = Math.sqrt(s * ((s - a) * (s - b) * (s - c)));
+//     return area;
+// }
+// console.log(areaOfTriangle(s(a, b, c)));
+
+
+// Exercise 4
+// var english = +prompt("Enter marks obtained in English");
+// var urdu = +prompt("Enter marks obtained in Urdu");
+// var maths = +prompt("Enter marks obtained in Maths");
+// var marksObtained = english + urdu + maths;
+// var totalMarks = 300;
+
+// function mainFunction() {
+//     function percentage() {
+//         var percent = +((marksObtained / totalMarks) * 100).toFixed(2) + "%";
+//         return percent;
+//     }
+//     alert("Percentage is " + percentage());
+//     function average() {
+//         var average = marksObtained / 3;
+//         return average;
+//     }
+//     alert("Average is " + average());
+// }
+// mainFunction();
+
+
+// Exercise 5
+// var sentence = prompt("Enter String");
+// var char = prompt("Enter a character");
+
+// function indexNo() {
+//     var indexNum = sentence.search(char);
+//     return indexNum;
+
+//     // // OR
+//     // for (var i = 0; i < sentence.length; i++) {
+//     //     if (sentence[i] === char) {
+//     //         var indexNum = sentence.search(sentence[i]);
+//     //         return indexNum;
+//     //     }
+//     // }
+// }
+// alert("Index no of '" + char + "' is " + indexNo());
+
+
+// Exercise 6
+// var sentence = prompt("Enter a sentence").toLowerCase();
+
+// if (!sentence || sentence.length > 25) {
+//     alert("Sentence can be maximum 25 characters long");
+// } else {
+//     function delVowels() {
+
+//         for (var i = 0; i < sentence.length; i++) {
+//             var char = sentence[i];
+//             if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+//                 console.log("Given sentence: " + sentence);
+//                 var delVowels = sentence.replace(/[aeiou]/g, "");
+//                 console.log("Deleted vowels from given sentence: " + delVowels);
+//                 break;
+//             }
+//         }
+//     }
+// }
+// delVowels();
+
+
+// Exercise 7
+// var str = prompt("Enter String");
+// function findOccurances(str) {
+//     var words = str.split(" ");
+//     var count = 0;
+//     for (var i = 0; i < words.length; i++) {
+//         for (var j = 0; j < words[i].length; j++) {
+//             var char = words[i].slice(j, j + 1).toLowerCase();
+//             var nextChar = words[i].slice(j + 1, j + 2).toLowerCase();
+//             switch (char) {
+//                 case "a":
+//                 case "e":
+//                 case "i":
+//                 case "o":
+//                 case "u":
+//                     switch (nextChar) {
+//                         case "a":
+//                         case "e":
+//                         case "i":
+//                         case "o":
+//                         case "u":
+//                             count++;
+//                     }
+//             }
+//         }
+
+//     }
+//     return count;
+// }
+
+// var count = findOccurances(str);
+// alert(count);
+
+
+// Exercise 8
+// var distance = parseInt(prompt("Enter distance in Km"));
+
+// function kmToFeet() {
+//     return distance * 3280.8;
+// }
+
+// function kmToMeters() {
+//     return distance * 1000;
+// }
+
+// function kmToinches() {
+//     return distance * 39370;
+// }
+
+// function kmToCentimeter() {
+//     return distance * 100000;
+// }
+
+// console.log("Distance converted in Feet is " + kmToFeet() + " ft");
+// console.log("Distance converted in Meters is " + kmToMeters() + " m");
+// console.log("Distance converted in Inches is " + kmToinches() + " in");
+// console.log("Distance converted in Centimeters is " + kmToCentimeter() + " cm");
+
+
+// Exercise 9
+// function overTimePay() {
+//     var hours;
+//     var count = 1;
+//     var overTime = 0;
+
+//     while (count <= 10) {
+//         hours = +prompt("Enter no of hours employee " + count + " has worked");
+
+//         if (hours > 40) {
+//             overTime = overTime + (hours - 40);
+
+//             console.log("Employee  " + count + "  has worked  " + hours + "  hours");
+//             console.log("Overtime pay is Rs " + (hours - 40) * 12);
+//         }
+//         else {
+//             console.log("no of hours worked is " + hours + " which is less than 40 hours, so no over time pay for employee " + count);
+//         }
+//         count++;
+//     }
+//     console.log("Total Overtime pay is Rs " + overTime * 12);
+//     return 0;
+// }
+// overTimePay();
+
+
+// Exercise 10
+// function currencyNotes() {
+
+//     var amount = +prompt("Enter the amount to be withdrawn (in hundreds):");
+
+//     var notesOf100 = Math.floor(amount / 100);
+//     var notesOf50 = Math.floor((amount % 100) / 50);
+//     var notesOf10 = Math.floor(((amount % 100) % 50) / 10);
+//     var remainingAmount = Math.floor(((amount % 100) % 50) % 10);
+
+//     switch (remainingAmount) {
+//         case 0:
+//             alert("You will have " + notesOf100 + " hundred notes, " + notesOf50 + " fifty notes, " + notesOf10 + " ten notes.");
+//         break;
+//         default:
+//             alert("You will have " + notesOf100 + " hundred notes, " + notesOf50 + " fifty notes, " + notesOf10 + " ten notes and " + remainingAmount + " remaining.");
+//         }
+// }
+// currencyNotes();
+
+
+
+
+
 // ------------------------------ Chapters 43-48: "EVENTS" ------------------------------
 
 // Exercise 1
