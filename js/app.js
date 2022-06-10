@@ -2057,7 +2057,7 @@
 //                 <h3>DATEJUST 36</h3>
 //                 <p>Oyster, 36 mm, Oystersteel and Everose gold</p>
 //             </figcaption>
-//             <button onclick="getDetails()" style="padding: 10px; border: none; 
+//             <button onclick="getDetails()" style="padding: 10px; border: none;
 //             background-color: rgb(249, 222, 159)">Read more</button>
 //         </figure>
 //     </div>`);
@@ -2114,18 +2114,18 @@
 //     </tbody>
 // </form>`);
 
+// var count = 1;
 // function addData(element) {
 
 //     var tBody = document.getElementById("std-data");
 //     var nameInput = element.parentNode.childNodes[5];
 //     var classInput = element.previousSibling.previousSibling;
-//     var count = 1;
 
 //     if (!nameInput.value || !classInput.value) {
 //         alert("Please enter Student Data");
 //     } else {
 //         tBody.innerHTML += `<tr>
-//             <td>${count}</td>
+//             <td>${count++}</td>
 //             <td>${nameInput.value}</td>
 //             <td>${classInput.value}</td>
 //             <td><button type="button" id="edit" onclick="editData(this)">Edit</button></td>
@@ -2137,7 +2137,14 @@
 // }
 
 // function deleteTableRow(element) {
+//     var tBody = document.getElementById("std-data");
+//     var sNo = +(element.parentNode.parentNode.firstElementChild.innerHTML);
+
 //     element.parentNode.parentNode.remove();
+//     for (var i = (sNo - 1); i < tBody.children.length; i++) {
+//         tBody.children[i].firstElementChild.innerHTML = sNo;
+//         sNo += 1;
+//     }
 // }
 
 // function editData(element) {
@@ -2367,11 +2374,18 @@
 // let citizensArr = [];
 // var count = 1;
 // function saveData() {
+//     var genderValue;
+//     var gender = document.getElementsByName("gender");
+//     for (var i = 0; i < gender.length; i++) {
+//         if (gender[i].checked) {
+//             genderValue = gender[i].value;
+//         }
+//     }
+
 //     var citizen = {
 //         sno: count++,
 //         name: document.getElementById("name").value,
-//         gender: document.getElementById("radio-box1").value,
-//         gender: document.getElementById("radio-box2").value,
+//         gender: genderValue,
 //         address: document.getElementById("address").value,
 //         education: document.getElementById("education").value,
 //         profession: document.getElementById("profession").value
